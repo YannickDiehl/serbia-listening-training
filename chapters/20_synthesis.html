@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-30a307ac0d0c77ebb518148b362088db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9f0e0a1ec90ea562bd064d49dae10e89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2c4fae3da3cc6cd46c677ca802383b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -213,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="three-estimates-of-the-training-effect" class="level2">
 <h2 class="anchored" data-anchor-id="three-estimates-of-the-training-effect">20.1 Three estimates of the training effect</h2>
-<p><strong>Where do the methods agree?</strong> While the experimental group trains (T0 to T1), the effect of each scale in three estimates: the descriptive Δd (Chapter 9), the preregistered multilevel interaction at T1 (Chapter 10) and the latent difference-in-differences (Chapter 11, only where the scale is measured invariantly over time, Chapter 7). <code>methods</code> counts the estimates that are significant (p &lt; .05) in favour of the training.</p>
+<p><strong>Where do the methods agree?</strong> While the experimental group trains (T0 to T1), the effect of each scale in three estimates: the descriptive Δd (Chapter 9), the preregistered multilevel interaction at T1 (Chapter 10) and the latent difference-in-differences (Chapter 11, only where Chapter 7 finds the measurement the same over the waves and in both groups). <code>methods</code> counts the estimates that are significant (p &lt; .05) in favour of the training.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>significant_up <span class="ot">&lt;-</span> \(estimate, p) <span class="sc">!</span><span class="fu">is.na</span>(p) <span class="sc">&amp;</span> p <span class="sc">&lt;</span> .<span class="dv">05</span> <span class="sc">&amp;</span> estimate <span class="sc">&gt;</span> <span class="dv">0</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -228,18 +228,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(outcome, <span class="at">b_mlm =</span> b, <span class="at">p_mlm =</span> p),</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="st">"outcome"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(smm<span class="sc">$</span>training_effects <span class="sc">|&gt;</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>              <span class="fu">filter</span>(scalar) <span class="sc">|&gt;</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(<span class="at">outcome =</span> construct, <span class="at">did_latent =</span> DiD_T01_est,</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                     <span class="at">p_latent =</span> DiD_T01_pvalue),</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="st">"outcome"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">methods =</span> <span class="fu">significant_up</span>(delta_d, p_delta_d) <span class="sc">+</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>           <span class="fu">significant_up</span>(b_mlm, p_mlm) <span class="sc">+</span></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>           <span class="fu">significant_up</span>(did_latent, p_latent))</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>agreement <span class="sc">|&gt;</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(block, label, delta_d, b_mlm, did_latent, methods) <span class="sc">|&gt;</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>))) <span class="sc">|&gt;</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(block, <span class="fu">desc</span>(methods))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>              <span class="fu">select</span>(<span class="at">outcome =</span> construct, <span class="at">did_latent =</span> DiD_T01_est,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                     <span class="at">p_latent =</span> DiD_T01_pvalue),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">by =</span> <span class="st">"outcome"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">methods =</span> <span class="fu">significant_up</span>(delta_d, p_delta_d) <span class="sc">+</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>           <span class="fu">significant_up</span>(b_mlm, p_mlm) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>           <span class="fu">significant_up</span>(did_latent, p_latent))</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>agreement <span class="sc">|&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(block, label, delta_d, b_mlm, did_latent, methods) <span class="sc">|&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(block, <span class="fu">desc</span>(methods))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -267,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Others Listen to Me</td>
 <td style="text-align: right;">0.35</td>
 <td style="text-align: right;">0.82</td>
-<td style="text-align: right;">0.43</td>
+<td style="text-align: right;">0.80</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
@@ -275,7 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Positivity Resonance</td>
 <td style="text-align: right;">0.28</td>
 <td style="text-align: right;">0.38</td>
-<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.33</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
@@ -291,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Belongingness</td>
 <td style="text-align: right;">0.17</td>
 <td style="text-align: right;">0.31</td>
-<td style="text-align: right;">0.36</td>
+<td style="text-align: right;">0.39</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="odd">
@@ -307,7 +306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Kama Muta</td>
 <td style="text-align: right;">0.05</td>
 <td style="text-align: right;">0.10</td>
-<td style="text-align: right;">0.11</td>
+<td style="text-align: right;">0.12</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -315,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No Alienation</td>
 <td style="text-align: right;">-0.27</td>
 <td style="text-align: right;">-0.76</td>
-<td style="text-align: right;">-0.28</td>
+<td style="text-align: right;">-0.88</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -323,7 +322,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No Isolation</td>
 <td style="text-align: right;">-0.12</td>
 <td style="text-align: right;">-0.33</td>
-<td style="text-align: right;">-0.12</td>
+<td style="text-align: right;">-0.42</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -331,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Rogerian Schema</td>
 <td style="text-align: right;">0.30</td>
 <td style="text-align: right;">0.38</td>
-<td style="text-align: right;">0.44</td>
+<td style="text-align: right;">0.53</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
@@ -339,7 +338,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Paradox Mindset</td>
 <td style="text-align: right;">0.47</td>
 <td style="text-align: right;">0.71</td>
-<td style="text-align: right;">0.51</td>
+<td style="text-align: right;">0.63</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
@@ -347,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Women Attitude</td>
 <td style="text-align: right;">0.22</td>
 <td style="text-align: right;">0.22</td>
-<td style="text-align: right;">0.10</td>
+<td style="text-align: right;">NA</td>
 <td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
@@ -355,7 +354,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Intellectual Humility</td>
 <td style="text-align: right;">-0.01</td>
 <td style="text-align: right;">0.01</td>
-<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.01</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -363,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Tolerance Diversity</td>
 <td style="text-align: right;">-0.02</td>
 <td style="text-align: right;">-0.04</td>
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">-0.09</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -371,31 +370,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Autonomy Satisfaction</td>
 <td style="text-align: right;">0.23</td>
 <td style="text-align: right;">0.32</td>
-<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">0.39</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">H3</td>
-<td style="text-align: left;">Relatedness Satisfaction</td>
-<td style="text-align: right;">0.26</td>
-<td style="text-align: right;">0.21</td>
-<td style="text-align: right;">0.18</td>
+<td style="text-align: left;">Competence Satisfaction</td>
+<td style="text-align: right;">0.24</td>
+<td style="text-align: right;">0.31</td>
+<td style="text-align: right;">0.25</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">H3</td>
-<td style="text-align: left;">Competence Satisfaction</td>
-<td style="text-align: right;">0.24</td>
-<td style="text-align: right;">0.31</td>
+<td style="text-align: left;">Relatedness Satisfaction</td>
 <td style="text-align: right;">0.26</td>
-<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.21</td>
+<td style="text-align: right;">0.19</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">H3</td>
 <td style="text-align: left;">Empowerment</td>
 <td style="text-align: right;">0.30</td>
 <td style="text-align: right;">0.36</td>
-<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">0.23</td>
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
@@ -403,7 +402,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Flourishing</td>
 <td style="text-align: right;">0.13</td>
 <td style="text-align: right;">0.15</td>
-<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.15</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -411,7 +410,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Autonomy Non-Frustrated</td>
 <td style="text-align: right;">-0.08</td>
 <td style="text-align: right;">-0.21</td>
-<td style="text-align: right;">-0.24</td>
+<td style="text-align: right;">-0.23</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -419,7 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Relatedness Non-Frustrated</td>
 <td style="text-align: right;">0.04</td>
 <td style="text-align: right;">-0.01</td>
-<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">-0.04</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -427,7 +426,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Competence Non-Frustrated</td>
 <td style="text-align: right;">-0.06</td>
 <td style="text-align: right;">-0.09</td>
-<td style="text-align: right;">-0.06</td>
+<td style="text-align: right;">-0.17</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -435,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Agency</td>
 <td style="text-align: right;">0.03</td>
 <td style="text-align: right;">0.16</td>
-<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">0.04</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -443,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Intellectual Capital</td>
 <td style="text-align: right;">0.16</td>
 <td style="text-align: right;">0.31</td>
-<td style="text-align: right;">0.28</td>
+<td style="text-align: right;">0.26</td>
 <td style="text-align: right;">0</td>
 </tr>
 </tbody>
@@ -451,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>7 scales show the effect in all three estimates: Others Listen to Me, Positivity Resonance, Rogerian Schema, Paradox Mindset, Autonomy Satisfaction, Relatedness Satisfaction, and Competence Satisfaction. All of them belong to listening and togetherness, cognitive complexity and need satisfaction. 12 scales show it in none, among them the frustration scales of need satisfaction, Intellectual Humility and Agency. No Alienation moves against the training in all three estimates.</p>
+<p>6 scales show the effect in all three estimates: Others Listen to Me, Positivity Resonance, Rogerian Schema, Paradox Mindset, Autonomy Satisfaction, and Competence Satisfaction. All of them belong to listening and togetherness, cognitive complexity and need satisfaction. 12 scales show it in none, among them the frustration scales of need satisfaction, Intellectual Humility and Agency. No Alienation moves against the training in all three estimates.</p>
 <p><strong>And the hypothesis composites?</strong> Only Cognitive Complexity (H2) shows a clear effect in both manifest estimates:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>composites <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"H1_ListeningTogetherness"</span>, <span class="st">"H2_CognitiveComplexity"</span>,</span>
@@ -504,21 +503,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Each composite pools constructs that Chapter 8 shows to be distinct, so an effect on a composite summarises effects of different size on its parts.</p>
-<p><strong>Is the latent effect larger than the manifest one?</strong> The latent models correct for measurement error, which should make effects larger. Δd and the latent d (Chapter 11.7) of the scalar invariant constructs, while the experimental group trains:</p>
+<p><strong>Is the latent effect larger than the manifest one?</strong> The latent models correct for measurement error, which should make effects larger. Δd and the latent d (Chapter 11.7) of the 20 constructs there, while the experimental group trains:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sizes <span class="ot">&lt;-</span> means<span class="sc">$</span>effects <span class="sc">|&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(pre <span class="sc">==</span> <span class="st">"T0"</span>, post <span class="sc">==</span> <span class="st">"T1"</span>, outcome <span class="sc">%in%</span> scales<span class="sc">$</span>scale) <span class="sc">|&gt;</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(outcome, delta_d) <span class="sc">|&gt;</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(smm<span class="sc">$</span>latent_d <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>               <span class="fu">filter</span>(scalar) <span class="sc">|&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>               <span class="fu">select</span>(<span class="at">outcome =</span> construct, <span class="at">latent_d =</span> T01),</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">by =</span> <span class="st">"outcome"</span>)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>sizes <span class="sc">|&gt;</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">constructs  =</span> <span class="fu">n</span>(),</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_dd   =</span> <span class="fu">median</span>(<span class="fu">abs</span>(delta_d)),</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_d    =</span> <span class="fu">median</span>(<span class="fu">abs</span>(latent_d)),</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">r           =</span> <span class="fu">cor</span>(delta_d, latent_d)) <span class="sc">|&gt;</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>               <span class="fu">select</span>(<span class="at">outcome =</span> construct, <span class="at">latent_d =</span> T01),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">by =</span> <span class="st">"outcome"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>sizes <span class="sc">|&gt;</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">constructs  =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_dd   =</span> <span class="fu">median</span>(<span class="fu">abs</span>(delta_d)),</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_d    =</span> <span class="fu">median</span>(<span class="fu">abs</span>(latent_d)),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">r           =</span> <span class="fu">cor</span>(delta_d, latent_d)) <span class="sc">|&gt;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -533,16 +531,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">20</td>
-<td style="text-align: right;">0.19</td>
-<td style="text-align: right;">0.18</td>
-<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">0.17</td>
+<td style="text-align: right;">0.96</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-<p>They are not: the latent effects are about as large as the manifest ones (median 0.18 against 0.19), and the two rank the constructs alike (r = .95). The correction for measurement error changes the precision of the estimates more than their size.</p>
+<p>They are not: the latent effects are about as large as the manifest ones (median 0.17 against 0.17), and the two rank the constructs alike (r = .96). The correction for measurement error changes the precision of the estimates more than their size.</p>
 </section>
 <section id="the-wait-list-replication" class="level2">
 <h2 class="anchored" data-anchor-id="the-wait-list-replication">20.2 The wait-list replication</h2>
@@ -558,7 +556,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>         sign <span class="sc">*</span> b <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>count_latent <span class="ot">&lt;-</span> \(estimate, p, sign) smm<span class="sc">$</span>training_effects <span class="sc">|&gt;</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(scalar, .data[[p]] <span class="sc">&lt;</span> .<span class="dv">05</span>, sign <span class="sc">*</span> .data[[estimate]] <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(.data[[p]] <span class="sc">&lt;</span> .<span class="dv">05</span>, sign <span class="sc">*</span> .data[[estimate]] <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nrow</span>()</span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>replication <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
@@ -595,15 +593,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">latent DiD (Chapter 11)</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-<p>The effect returns while the control group trains, in all three estimates: for 9 and 8 scales in the manifest estimates (against 9 and 9 in the first window), and for 4 constructs in the latent estimate (against 8). None of the 22 replication tests finds that the two training effects differ, although the wide intervals leave room for differences.</p>
+<p>The effect returns while the control group trains, in all three estimates: for 9 and 8 scales in the manifest estimates (against 9 and 9 in the first window), and for 7 constructs in the latent estimate (against 7). None of the 20 replication tests finds that the two training effects differ, although the wide intervals leave room for differences.</p>
 </section>
 <section id="how-the-training-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-the-training-works">20.3 How the training works</h2>
@@ -791,16 +789,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>What limits these conclusions?</strong></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>limits <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">limit =</span> <span class="fu">c</span>(<span class="st">"latent models at a boundary (Chapter 11)"</span>,</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>            <span class="st">"constructs without scalar invariance over time (Chapter 7)"</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>            <span class="st">"constructs not scalar invariant across groups (Chapter 7)"</span>,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">limit =</span> <span class="fu">c</span>(<span class="st">"latent models without the covariates (Chapter 11)"</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>            <span class="st">"constructs that stop in Chapter 7"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>            <span class="st">"constructs with partial invariance (Chapter 7)"</span>,</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">"sample sets in which H2 misses significance (Chapter 14)"</span>,</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>            <span class="st">"mover contrasts significant (Chapter 13)"</span>,</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>            <span class="st">"scales with a Δd for the training after BH correction (Chapter 9)"</span>,</span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>            <span class="st">"latent training effects after BH correction (Chapter 11)"</span>),</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="fu">c</span>(<span class="fu">sum</span>(<span class="sc">!</span>smm<span class="sc">$</span>admissible<span class="sc">$</span>admissible),</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(<span class="sc">!</span>invariance<span class="sc">$</span>summary<span class="sc">$</span>scalar),</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(invariance<span class="sc">$</span>groups<span class="sc">$</span>Chen <span class="sc">!=</span> <span class="st">"scalar"</span>),</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="fu">c</span>(<span class="fu">sum</span>(<span class="sc">!</span>smm<span class="sc">$</span>models<span class="sc">$</span>covariates),</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(<span class="sc">!</span>invariance<span class="sc">$</span>adopted<span class="sc">$</span>chapter_11),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(<span class="fu">lengths</span>(invariance<span class="sc">$</span>adopted<span class="sc">$</span>freed) <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        robustness<span class="sc">$</span>delta_d <span class="sc">|&gt;</span></span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">filter</span>(outcome <span class="sc">==</span> <span class="st">"H2_CognitiveComplexity"</span>, pre <span class="sc">==</span> <span class="st">"T0"</span>,</span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                 post <span class="sc">==</span> <span class="st">"T1"</span>, p <span class="sc">&gt;=</span> .<span class="dv">05</span>) <span class="sc">|&gt;</span> <span class="fu">nrow</span>(),</span>
@@ -810,7 +808,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>          <span class="fu">filter</span>(pre <span class="sc">==</span> <span class="st">"T0"</span>, post <span class="sc">==</span> <span class="st">"T1"</span>, family <span class="sc">==</span> <span class="st">"scales"</span>,</span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>                 p_BH <span class="sc">&lt;</span> .<span class="dv">05</span>, delta_d <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> <span class="fu">nrow</span>(),</span>
 <span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>        smm<span class="sc">$</span>adjusted <span class="sc">|&gt;</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>          <span class="fu">filter</span>(scalar, DiD_T01_p_BH <span class="sc">&lt;</span> .<span class="dv">05</span>, DiD_T01_est <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> <span class="fu">nrow</span>())</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>          <span class="fu">filter</span>(DiD_T01_p_BH <span class="sc">&lt;</span> .<span class="dv">05</span>, DiD_T01_est <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> <span class="fu">nrow</span>())</span>
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>limits</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
@@ -824,16 +822,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">latent models at a boundary (Chapter 11)</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: left;">latent models without the covariates (Chapter 11)</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">constructs without scalar invariance over time (Chapter 7)</td>
+<td style="text-align: left;">constructs that stop in Chapter 7</td>
 <td style="text-align: right;">2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">constructs not scalar invariant across groups (Chapter 7)</td>
-<td style="text-align: right;">9</td>
+<td style="text-align: left;">constructs with partial invariance (Chapter 7)</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">sample sets in which H2 misses significance (Chapter 14)</td>
@@ -849,16 +847,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: left;">latent training effects after BH correction (Chapter 11)</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
-<p>Seven of the 22 latent models end at a boundary (autocorrelated residuals beyond ±1 or negative residual variances), so their latent estimates are read with caution. Two constructs are not measured invariantly over time, and Autonomy Satisfaction joins them under the stricter cutoffs for small samples (Chapter 7.3). Before the training, 9 of the 22 constructs are not measured alike in the two groups, among them Rogerian Schema, Paradox Mindset, and Relatedness Satisfaction, which show the effect in all three estimates; their latent effects assume equal measurement in both groups. By Cohen’s labels the latent effects are small (Chapter 11.7).</p>
-<p>Correcting for testing 23 scales at once (Benjamini-Hochberg) leaves 1 scale with a Δd for the training and 6 of the eight latent training effects; tested one-sided, as the hypotheses are directional, all three composites show the multilevel effect at T1. With the standard deviation of all questionnaires before the window, the replication while the control group trains shrinks from 9 to 5 scales (Chapter 9.4). Other choices leave the picture in place: a trainer level adds nothing to the multilevel models (Chapter 10.2), and dropout does not explain the late gains in well-being (Chapter 9.6). Δd and the latent models leave out that persons are clustered in municipalities; the multilevel models, which take the municipalities into account, and the cluster-robust mediation give the same picture.</p>
-<p>The effect on Cognitive Complexity holds in eight of nine sample sets and misses significance only among the 127 persons with all four waves. At the level of single persons, no scale separates the groups significantly (Chapter 13). The post hoc structure was found in the same data and partly selected for responsiveness to the training, and neither of its two factors is scalar invariant over the waves (Chapter 19.6), so its effects rest on manifest scores and need a new sample.</p>
+<p>Two constructs stop in Chapter 7, I Listen and Women Attitude: their measurement does not stay the same in one group, so their latent means are not compared. Every latent model of the others is possible, several only after the stop rule of Chapter 7 set estimates at 0 or held autocorrelations equal; under the stricter cutoffs for small samples, more constructs would stop at one step or more (Chapter 7.6). 5 constructs are measured alike only in part, with one item freed in one group, among them Autonomy Satisfaction, which show the effect in all three estimates; their latent effects rest on the items that are measured alike. Kama Muta is compared without the covariates; with them, its effects are nearly the same (Chapter 11). By Cohen’s labels the latent effects are small (Chapter 11.7).</p>
+<p>Correcting for testing 23 scales at once (Benjamini-Hochberg) leaves 1 scale with a Δd for the training and 5 of the 7 latent training effects; tested one-sided, as the hypotheses are directional, all three composites show the multilevel effect at T1. With the standard deviation of all questionnaires before the window, the replication while the control group trains shrinks from 9 to 5 scales (Chapter 9.9). Other choices leave the picture in place: a trainer level adds nothing to the multilevel models (Chapter 10.8), and dropout does not explain the late gains in well-being (Chapter 9.8). Δd and the latent models leave out that persons are clustered in municipalities; the multilevel models, which take the municipalities into account, and the cluster-robust mediation give the same picture.</p>
+<p>The effect on Cognitive Complexity holds in eight of nine sample sets and misses significance only among the 127 persons with all four waves. At the level of single persons, no scale separates the groups significantly (Chapter 13). The post hoc structure was found in the same data and partly selected for responsiveness to the training, and neither of its two factors is scalar invariant over the waves (Chapter 19.3), so its effects rest on manifest scores and need a new sample.</p>
 
 
 </section>

@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-30a307ac0d0c77ebb518148b362088db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9f0e0a1ec90ea562bd064d49dae10e89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2c4fae3da3cc6cd46c677ca802383b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,6 +103,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -146,10 +149,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#three-criteria-of-change" id="toc-three-criteria-of-change" class="nav-link active" data-scroll-target="#three-criteria-of-change">13.1 Three criteria of change</a></li>
-  <li><a href="#while-the-experimental-group-trains" id="toc-while-the-experimental-group-trains" class="nav-link" data-scroll-target="#while-the-experimental-group-trains">13.2 While the experimental group trains</a></li>
-  <li><a href="#from-baseline-for-persons-with-all-four-waves" id="toc-from-baseline-for-persons-with-all-four-waves" class="nav-link" data-scroll-target="#from-baseline-for-persons-with-all-four-waves">13.3 From baseline, for persons with all four waves</a></li>
-  <li><a href="#each-group-in-its-own-training-window" id="toc-each-group-in-its-own-training-window" class="nav-link" data-scroll-target="#each-group-in-its-own-training-window">13.4 Each group in its own training window</a></li>
+  <li><a href="#how-each-score-is-examined" id="toc-how-each-score-is-examined" class="nav-link active" data-scroll-target="#how-each-score-is-examined">13.1 How each score is examined</a></li>
+  <li><a href="#data-and-tools" id="toc-data-and-tools" class="nav-link" data-scroll-target="#data-and-tools">13.2 Data and tools</a></li>
+  <li><a href="#cognitive-complexity-h2" id="toc-cognitive-complexity-h2" class="nav-link" data-scroll-target="#cognitive-complexity-h2">13.3 Cognitive complexity (H2)</a>
+  <ul>
+  <li><a href="#tolerance-diversity" id="toc-tolerance-diversity" class="nav-link" data-scroll-target="#tolerance-diversity">Tolerance Diversity</a>
+  <ul class="collapse">
+  <li><a href="#the-score-steps-1-and-2" id="toc-the-score-steps-1-and-2" class="nav-link" data-scroll-target="#the-score-steps-1-and-2">The score · Steps 1 and 2</a></li>
+  <li><a href="#the-movers-steps-3-to-5" id="toc-the-movers-steps-3-to-5" class="nav-link" data-scroll-target="#the-movers-steps-3-to-5">The movers · Steps 3 to 5</a></li>
+  <li><a href="#the-verdict-steps-6-and-7" id="toc-the-verdict-steps-6-and-7" class="nav-link" data-scroll-target="#the-verdict-steps-6-and-7">The verdict · Steps 6 and 7</a></li>
+  </ul></li>
+  <li><a href="#women-attitude" id="toc-women-attitude" class="nav-link" data-scroll-target="#women-attitude">Women Attitude</a>
+  <ul class="collapse">
+  <li><a href="#the-score-steps-1-and-2-1" id="toc-the-score-steps-1-and-2-1" class="nav-link" data-scroll-target="#the-score-steps-1-and-2-1">The score · Steps 1 and 2</a></li>
+  <li><a href="#the-movers-steps-3-to-5-1" id="toc-the-movers-steps-3-to-5-1" class="nav-link" data-scroll-target="#the-movers-steps-3-to-5-1">The movers · Steps 3 to 5</a></li>
+  <li><a href="#the-verdict-steps-6-and-7-1" id="toc-the-verdict-steps-6-and-7-1" class="nav-link" data-scroll-target="#the-verdict-steps-6-and-7-1">The verdict · Steps 6 and 7</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#both-scores-at-a-glance" id="toc-both-scores-at-a-glance" class="nav-link" data-scroll-target="#both-scores-at-a-glance">13.4 Both scores at a glance</a></li>
   </ul>
 </nav>
 </nav>
@@ -189,7 +206,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Looks at single persons instead of means: who improved, stayed the same or declined between two waves, under three criteria of change. For Tolerance Diversity and Women Attitude, whose means barely moved, it asks whether the trained group improved more often in its own training window. Exploratory; feeds a supplementary paragraph of the paper.</p>
+<p>Looks at single persons instead of means: who improved, stayed the same or declined between two waves, under three criteria of change. For Tolerance Diversity and Women Attitude, whose means barely moved, it asks whether the trained group improved more often in its own training window. Both scales go through the same seven steps: the score and its reliability, the bands that separate change from no change, the movers while the experimental group trains, the movers from baseline, the rates of improvement in each group’s own training window, the verdict, and what follows. A table at the end puts both scales side by side. Exploratory; feeds a supplementary paragraph of the paper.</p>
 </div>
 </div>
 <div class="cell">
@@ -200,797 +217,612 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>item_names <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">select</span>(df, ListenOther1<span class="sc">:</span>CompetenceNonFrustrated4))</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/scales.R"</span>)                    <span class="co"># the 23 scales (Chapter 2)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="three-criteria-of-change" class="level2">
-<h2 class="anchored" data-anchor-id="three-criteria-of-change">13.1 Three criteria of change</h2>
-<p><strong>When has a person changed?</strong> The change is the score after minus the score before, for the persons who answered at both waves. Three criteria draw the line between change and no change:</p>
+<section id="how-each-score-is-examined" class="level2">
+<h2 class="anchored" data-anchor-id="how-each-score-is-examined">13.1 How each score is examined</h2>
+<p><strong>What happens to each score?</strong> The two scales of Hypothesis 2 whose means barely moved (Chapter 9) go through the same seven steps, in the same order and in three parts: the score, the movers, and the verdict. The diagram shows the path; the list below describes each step.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  subgraph SCORE["the score"]
+    direction LR
+    S1["&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;the score"] --&gt; S2["&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;the bands"]
+  end
+  subgraph MOVERS["the movers: both groups"]
+    direction LR
+    S3["&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;T0 to T1"] --&gt; S4["&lt;b&gt;Step 4&lt;/b&gt;&lt;br&gt;from baseline"]
+    S4 --&gt; S5{{"&lt;b&gt;Step 5&lt;/b&gt;&lt;br&gt;each group in&lt;br&gt;its own window"}}
+  end
+  V["&lt;b&gt;Steps 6 and 7&lt;/b&gt;&lt;br&gt;the verdict, what follows"]
+  SCORE --&gt; MOVERS
+  MOVERS --&gt; V
+  classDef both fill:#f0eaf8,stroke:#8e6bbf,color:#1d1d1f
+  classDef all fill:#efeff2,stroke:#8a8a8a,color:#1d1d1f
+  classDef verdict fill:#ffffff,stroke:#1d1d1f,color:#1d1d1f
+  class S1,S2 all
+  class S3,S4,S5 both
+  class V verdict
+  style SCORE fill:#fafafa,stroke:#8a8a8a
+  style MOVERS fill:#fafafa,stroke:#8a8a8a
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>The seven steps in detail:</strong></p>
+<p><em>The score:</em></p>
+<ol type="1">
+<li><strong>The score.</strong> Which items enter the score, and how reliable they are in January: Cronbach’s α of all T0 questionnaires. Tolerance Diversity enters with its 5 items, Women Attitude with all 9, including the two items at the ceiling that the score of Chapter 2 leaves out (<code>womenAttitude_full</code>, Chapter 2.3), so that a change on any item counts.</li>
+<li><strong>The bands.</strong> A person’s change is the score after minus the score before, for the persons who answered at both waves, here from T0 to T1. Three criteria draw the line between change and no change:
 <ul>
 <li><strong>strict:</strong> any difference counts;</li>
 <li><strong>item step:</strong> more than one step on one item, 1/k of the scale for k items;</li>
-<li><strong>reliable change</strong> (Jacobson &amp; Truax, 1991): more than 1.96 · SD<sub>before</sub> · √(2(1 − α)), with Cronbach’s α of all T0 questionnaires.</li>
+<li><strong>reliable change</strong> (Jacobson &amp; Truax, 1991): more than 1.96 · SD<sub>before</sub> · √(2(1 − α)), with the standard deviation of the scores before, over the persons who answered at both waves, and α of step 1. A change beyond this band is unlikely (p &lt; .05) to come from measurement error alone.</li>
 </ul>
-<p>Both scales enter with all their items: Tolerance Diversity with 5, Women Attitude with 9, including the two items at the ceiling (<code>womenAttitude_full</code>, Chapter 2).</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># each person's change between two waves</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>change_between <span class="ot">&lt;-</span> \(data, score, pre, post) {</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">%in%</span> <span class="fu">c</span>(pre, post)) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(id, condition, Occasion, <span class="at">value =</span> <span class="fu">all_of</span>(score)) <span class="sc">|&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Occasion, <span class="at">values_from =</span> value) <span class="sc">|&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">before =</span> <span class="fu">all_of</span>(pre), <span class="at">after =</span> <span class="fu">all_of</span>(post)) <span class="sc">|&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">change =</span> after <span class="sc">-</span> before)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># increased, same or decreased: beyond a band of +- `band`</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>direction <span class="ot">&lt;-</span> \(change, <span class="at">band =</span> <span class="dv">0</span>) {</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">case_when</span>(change <span class="sc">&gt;</span>  band <span class="sc">~</span> <span class="st">"increased"</span>,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>            change <span class="sc">&lt;</span> <span class="sc">-</span>band <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">.default       =</span> <span class="st">"same"</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co"># the share of each direction under the three criteria, by condition</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>movers <span class="ot">&lt;-</span> \(changes, k, alpha) {</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  reliable_band <span class="ot">&lt;-</span> <span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sd</span>(changes<span class="sc">$</span>before) <span class="sc">*</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> alpha))</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  changes <span class="sc">|&gt;</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">strict      =</span> <span class="fu">direction</span>(change),</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>           <span class="at">item_step   =</span> <span class="fu">direction</span>(change, <span class="dv">1</span> <span class="sc">/</span> k),</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>           <span class="at">reliable    =</span> <span class="fu">direction</span>(change, reliable_band)) <span class="sc">|&gt;</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">c</span>(strict, item_step, reliable), <span class="at">names_to =</span> <span class="st">"criterion"</span>,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>                 <span class="at">values_to =</span> <span class="st">"direction"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(condition, criterion, direction) <span class="sc">|&gt;</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>),</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>           <span class="at">.by =</span> <span class="fu">c</span>(condition, criterion))</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p><strong>How reliable are the two scales at T0?</strong></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>alpha_T0 <span class="ot">&lt;-</span> \(items) {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="fu">all_of</span>(items)) <span class="sc">|&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    psych<span class="sc">::</span><span class="fu">alpha</span>() <span class="sc">|&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pluck</span>(<span class="st">"total"</span>, <span class="st">"raw_alpha"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>alphas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">ToleranceDiversity =</span> <span class="fu">alpha_T0</span>(scale_items<span class="sc">$</span>ToleranceDiversity),</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">womenAttitude      =</span> <span class="fu">alpha_T0</span>(scale_items<span class="sc">$</span>womenAttitude))</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(alphas, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>ToleranceDiversity      womenAttitude 
-             0.686              0.665 </code></pre>
-</div>
-</div>
+A figure shows the change of every person against the band of reliable change.</li>
+</ol>
+<p><em>The movers:</em></p>
+<ol start="3" type="1">
+<li><strong>Movers while the experimental group trains.</strong> The share of each group that increased, stayed the same or decreased from T0 to T1, under each of the three criteria.</li>
+<li><strong>Movers from baseline.</strong> The persons who answered at all four waves (S1, Chapter 3), from T0 to each later wave, under the strict criterion: do the two groups drift apart over the year?</li>
+<li><strong>Each group in its own training window.</strong> On the same persons, so that both windows rest on the same people: the share who improved (strict criterion) in each condition, from T0 to T1, while the experimental group trains, and from T2 to T3, while the control group trains. The two shares are compared by a two-proportion χ² test without continuity correction; a difference counts as significant at p &lt; .05. The test needs an expected count of at least 5 in every cell (Cochran, 1954), checked for both windows. A figure shows both windows.</li>
+</ol>
+<p><em>The verdict:</em></p>
+<ol start="6" type="1">
+<li><strong>The verdict.</strong> Whether the group in training improves more often than the waiting group in both windows, as an effect of the training would predict, and whether either difference is significant.</li>
+<li><strong>What follows.</strong> How the result stands beside the Δd of Chapter 9 and, where Chapter 7 carries the scale on, the latent difference-in-differences of Chapter 11, and where it goes next.</li>
+</ol>
 </section>
-<section id="while-the-experimental-group-trains" class="level2">
-<h2 class="anchored" data-anchor-id="while-the-experimental-group-trains">13.2 While the experimental group trains</h2>
-<p><strong>Who moves from T0 to T1?</strong></p>
+<section id="data-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-tools">13.2 Data and tools</h2>
+<p><strong>Which data?</strong> The January questionnaires for the reliability (step 1), all questionnaires for the changes from T0 to T1 (steps 2 and 3), the questionnaires of the persons who answered at all four waves (steps 4 to 6), and the effects of the two scales in Chapters 9 and 11 for step 7:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>tolerance_T01 <span class="ot">&lt;-</span> <span class="fu">change_between</span>(df, <span class="st">"ToleranceDiversity"</span>, <span class="st">"T0"</span>, <span class="st">"T1"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>women_T01     <span class="ot">&lt;-</span> <span class="fu">change_between</span>(df, <span class="st">"womenAttitude_full"</span>, <span class="st">"T0"</span>, <span class="st">"T1"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">movers</span>(tolerance_T01, <span class="at">k =</span> <span class="dv">5</span>, <span class="at">alpha =</span> alphas[[<span class="st">"ToleranceDiversity"</span>]]) <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="st">"Tolerance Diversity"</span>, <span class="at">.before =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">scale</th>
-<th style="text-align: left;">condition</th>
-<th style="text-align: left;">criterion</th>
-<th style="text-align: left;">direction</th>
-<th style="text-align: right;">n</th>
-<th style="text-align: right;">percent</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;">35.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">38.8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">25.4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2.2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">4.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">125</td>
-<td style="text-align: right;">93.3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">57</td>
-<td style="text-align: right;">42.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">54</td>
-<td style="text-align: right;">40.3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">17.2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">63</td>
-<td style="text-align: right;">42.9</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">60</td>
-<td style="text-align: right;">40.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">16.3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">4.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">6.8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">130</td>
-<td style="text-align: right;">88.4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">64</td>
-<td style="text-align: right;">43.5</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">69</td>
-<td style="text-align: right;">46.9</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Tolerance Diversity</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">9.5</td>
-</tr>
-</tbody>
-</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>t0       <span class="ot">&lt;-</span> <span class="fu">filter</span>(df, Occasion <span class="sc">==</span> <span class="st">"T0"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>complete <span class="ot">&lt;-</span> <span class="fu">filter</span>(df, s1_complete)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>means    <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"cache/means.rds"</span>)   <span class="co"># Δd (Chapter 9)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>smm      <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"cache/smm.rds"</span>)     <span class="co"># latent DiD (Chapter 11)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">movers</span>(women_T01, <span class="at">k =</span> <span class="dv">9</span>, <span class="at">alpha =</span> alphas[[<span class="st">"womenAttitude"</span>]]) <span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="st">"Women Attitude"</span>, <span class="at">.before =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">scale</th>
-<th style="text-align: left;">condition</th>
-<th style="text-align: left;">criterion</th>
-<th style="text-align: left;">direction</th>
-<th style="text-align: right;">n</th>
-<th style="text-align: right;">percent</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">18.2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">29</td>
-<td style="text-align: right;">22.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">79</td>
-<td style="text-align: right;">59.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">7.6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">6.1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">86.4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: right;">21.2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">28.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">67</td>
-<td style="text-align: right;">50.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">17.6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">47</td>
-<td style="text-align: right;">31.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">item_step</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">75</td>
-<td style="text-align: right;">50.7</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2.7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">6.8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">reliable</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">134</td>
-<td style="text-align: right;">90.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">18.2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">33.8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Women Attitude</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">strict</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">71</td>
-<td style="text-align: right;">48.0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<p>Few persons change reliably: the bands are ±2.64 points for Tolerance Diversity and ±1.20 for Women Attitude, and 86 to 93 % of each group stay within them.</p>
-</section>
-<section id="from-baseline-for-persons-with-all-four-waves" class="level2">
-<h2 class="anchored" data-anchor-id="from-baseline-for-persons-with-all-four-waves">13.3 From baseline, for persons with all four waves</h2>
-<p><strong>How do the persons who answered at every wave move?</strong> Strict criterion, from T0 to each later wave:</p>
+<p>127 persons answered at all four waves, once at each.</p>
+<p><strong>Which tools?</strong> The analysis of each step is written out for both scales. Only the two figures use small functions, defined once here; the wording of the items comes from the file that Chapter 6 shows:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Changes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Rates</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Expected counts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Item wording</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>complete <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> <span class="fu">filter</span>(s1_complete)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>from_baseline <span class="ot">&lt;-</span> \(score) {</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"T1"</span>, <span class="st">"T2"</span>, <span class="st">"T3"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">set_names</span>() <span class="sc">|&gt;</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">map</span>(\(post) <span class="fu">change_between</span>(complete, score, <span class="st">"T0"</span>, post)) <span class="sc">|&gt;</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list_rbind</span>(<span class="at">names_to =</span> <span class="st">"until"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">direction =</span> <span class="fu">direction</span>(change)) <span class="sc">|&gt;</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(until, condition, direction) <span class="sc">|&gt;</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>), <span class="at">.by =</span> <span class="fu">c</span>(until, condition))</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">from_baseline</span>(<span class="st">"ToleranceDiversity"</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="st">"Tolerance Diversity"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">until</th>
-<th style="text-align: left;">condition</th>
-<th style="text-align: left;">direction</th>
-<th style="text-align: right;">n</th>
-<th style="text-align: right;">percent</th>
-<th style="text-align: left;">scale</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">38.5</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">28</td>
-<td style="text-align: right;">35.9</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">25.6</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">51.0</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">40.8</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">8.2</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">30.8</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">36</td>
-<td style="text-align: right;">46.2</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">23.1</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">22</td>
-<td style="text-align: right;">44.9</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">42.9</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">12.2</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">31</td>
-<td style="text-align: right;">39.7</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">35</td>
-<td style="text-align: right;">44.9</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">15.4</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">49.0</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">46.9</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4.1</td>
-<td style="text-align: left;">Tolerance Diversity</td>
-</tr>
-</tbody>
-</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the change of every person, one bar per step on one item and one panel</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># per condition; shaded the band of reliable change</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>plot_changes <span class="ot">&lt;-</span> \(changes, band, k) {</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  changes <span class="sc">|&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(change, <span class="at">fill =</span> condition)) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">"rect"</span>, <span class="at">xmin =</span> <span class="sc">-</span>band, <span class="at">xmax =</span> band, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">fill =</span> <span class="st">"grey85"</span>, <span class="at">alpha =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span> <span class="sc">/</span> k, <span class="at">center =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">colour =</span> <span class="st">"grey40"</span>, <span class="at">linewidth =</span> .<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span> condition, <span class="at">ncol =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">Control =</span> <span class="st">"#2a78d6"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">Experimental =</span> <span class="st">"#eb6834"</span>),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                      <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"change of the score, after minus before (scale 0 to 10)"</span>,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">y =</span> <span class="st">"persons"</span>) <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">from_baseline</span>(<span class="st">"womenAttitude_full"</span>) <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="st">"Women Attitude"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="kable-table">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">until</th>
-<th style="text-align: left;">condition</th>
-<th style="text-align: left;">direction</th>
-<th style="text-align: right;">n</th>
-<th style="text-align: right;">percent</th>
-<th style="text-align: left;">scale</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">23.1</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">52.6</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">18.4</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">38.8</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T1</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">42.9</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">23.1</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: right;">57.7</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">10.2</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">42.9</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T2</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">46.9</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">25.6</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Control</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">55.1</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">decreased</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">20.4</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">increased</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">36.7</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">T3</td>
-<td style="text-align: left;">Experimental</td>
-<td style="text-align: left;">same</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">42.9</td>
-<td style="text-align: left;">Women Attitude</td>
-</tr>
-</tbody>
-</table>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the share of each group who improved, in the two training windows</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plot_rates <span class="ot">&lt;-</span> \(rates) {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  rates <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">window =</span> <span class="fu">if_else</span>(pre <span class="sc">==</span> <span class="st">"T0"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                            <span class="st">"T0 to T1</span><span class="sc">\n</span><span class="st">the experimental group trains"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                            <span class="st">"T2 to T3</span><span class="sc">\n</span><span class="st">the control group trains"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(window, improved_percent, <span class="at">fill =</span> condition)) <span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> .<span class="dv">7</span>), <span class="at">width =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">sprintf</span>(<span class="st">"%.1f %%"</span>, improved_percent)),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> .<span class="dv">7</span>), <span class="at">vjust =</span> <span class="sc">-</span>.<span class="dv">4</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>              <span class="at">size =</span> <span class="fl">3.3</span>) <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">Control =</span> <span class="st">"#2a78d6"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">Experimental =</span> <span class="st">"#eb6834"</span>)) <span class="sc">+</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">60</span>), <span class="at">labels =</span> \(x) <span class="fu">str_c</span>(x, <span class="st">" %"</span>)) <span class="sc">+</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"improved (strict criterion)"</span>, <span class="at">fill =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>, <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>          <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the counts a two-proportion test expects in its four cells (improved or</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># not, by condition) if both groups improved equally often; the test needs</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># at least 5 in every cell (Cochran, 1954)</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>expected_counts <span class="ot">&lt;-</span> \(window) {</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  observed <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="at">improved =</span> window<span class="sc">$</span>improved,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">other    =</span> window<span class="sc">$</span>persons <span class="sc">-</span> window<span class="sc">$</span>improved)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">outer</span>(<span class="fu">rowSums</span>(observed), <span class="fu">colSums</span>(observed)) <span class="sc">/</span> <span class="fu">sum</span>(observed)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The wording of every item (English version of the questionnaire), under</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the names of the analysis file (Chapter 2), and the reverse-keyed items</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>need <span class="ot">&lt;-</span> \(numbers) <span class="fu">paste0</span>(<span class="st">"needSatisfaction"</span>, numbers)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>wording_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Alienation1"</span> <span class="ot">=</span> <span class="st">"NoAlienation1"</span>, <span class="st">"Alienation2"</span> <span class="ot">=</span> <span class="st">"NoAlienation2"</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Isolation1"</span>  <span class="ot">=</span> <span class="st">"NoIsolation1"</span>,  <span class="st">"Isolation2"</span>  <span class="ot">=</span> <span class="st">"NoIsolation2"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"AutonomySatisfaction"</span>,     <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">13</span>, <span class="dv">19</span>))),</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"AutonomyNonFrustrated"</span>,    <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">8</span>, <span class="dv">14</span>, <span class="dv">20</span>))),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"RelatednessSatisfaction"</span>,  <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">15</span>, <span class="dv">21</span>))),</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"RelatednessNonFrustrated"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">16</span>, <span class="dv">22</span>))),</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"CompetenceSatisfaction"</span>,   <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">11</span>, <span class="dv">17</span>, <span class="dv">23</span>))),</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"CompetenceNonFrustrated"</span>,  <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>)))</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>item_wording <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/item_labels.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(<span class="at">item =</span> <span class="fu">coalesce</span>(wording_names[column_name], column_name),</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">text =</span> <span class="fu">str_squish</span>(label_en))</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># answered on the reverse scale and turned around in Chapter 2</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>reverse_keyed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">str_c</span>(<span class="st">"NoAlienation"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>), <span class="fu">str_c</span>(<span class="st">"NoIsolation"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>),</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"Flourishing5"</span>, <span class="st">"Flourishing6"</span>, <span class="fu">str_c</span>(<span class="st">"Rogerian"</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">9</span>),</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ToleranceDiversity1"</span>,</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">str_c</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Autonomy"</span>, <span class="st">"Relatedness"</span>, <span class="st">"Competence"</span>),</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>                             <span class="at">each =</span> <span class="dv">4</span>), <span class="st">"NonFrustrated"</span>, <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </div>
 </div>
 </div>
 </section>
-<section id="each-group-in-its-own-training-window" class="level2">
-<h2 class="anchored" data-anchor-id="each-group-in-its-own-training-window">13.4 Each group in its own training window</h2>
-<p><strong>Does the trained group improve more often?</strong> On the 127 persons with all four waves, so that both windows rest on the same persons: the share who improved (strict criterion) in each condition, compared by a two-proportion test.</p>
+<section id="cognitive-complexity-h2" class="level2">
+<h2 class="anchored" data-anchor-id="cognitive-complexity-h2">13.3 Cognitive complexity (H2)</h2>
+<p><strong>Which scores?</strong> Two of the five scales of the second hypothesis: Tolerance Diversity, whose Δd is significant in none of the four windows of Chapter 9, and Women Attitude, whose scores start close to the top of the scale.</p>
+<section id="tolerance-diversity" class="level3">
+<h3 class="anchored" data-anchor-id="tolerance-diversity">Tolerance Diversity</h3>
+<p><strong>Its path through the steps.</strong> One row per step below; Step 1 uses all January questionnaires <span class="data-badge data-all">all questionnaires</span>, the later steps the persons of both groups <span class="data-badge data-both">both groups</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">How reliable is the score in January?</td>
+<td style="text-align: left;">almost a third of its variance is measurement error</td>
+<td style="text-align: left;">the bands</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Where does a reliable change begin?</td>
+<td style="text-align: left;">beyond more than a quarter of the scale</td>
+<td style="text-align: left;">movers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Who moves from T0 to T1?</td>
+<td style="text-align: left;">the experimental group increases somewhat more often</td>
+<td style="text-align: left;">from baseline</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Do the groups drift apart over the year?</td>
+<td style="text-align: left;">no</td>
+<td style="text-align: left;">own windows</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Does the group in training improve more often?</td>
+<td style="text-align: left;">in the first window, not significantly; in the second, the waiting group does</td>
+<td style="text-align: left;">verdict</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">The verdict</td>
+<td style="text-align: left;">no sign of an effect of the training</td>
+<td style="text-align: left;">what follows</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Where next?</td>
+<td style="text-align: left;">the table of 13.4 and Chapter 20</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<section id="the-score-steps-1-and-2" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-score-steps-1-and-2">The score · Steps 1 and 2</h4>
+<section id="step-1-the-score-all-questionnaires" class="level5">
+<h5 class="anchored" data-anchor-id="step-1-the-score-all-questionnaires">Step 1 · The score <span class="data-badge data-all">all questionnaires</span></h5>
+<p><strong>Which items enter the score?</strong> Four statements about Roma/Sinti women and one about meeting people of a different background; item 1 was asked the other way round and turned for the analysis. The score is the mean of all five:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>improvement <span class="ot">&lt;-</span> \(score, pre, post) {</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  rates <span class="ot">&lt;-</span> <span class="fu">change_between</span>(complete, score, pre, post) <span class="sc">|&gt;</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">persons  =</span> <span class="fu">n</span>(),</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">improved =</span> <span class="fu">sum</span>(change <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">declined =</span> <span class="fu">sum</span>(change <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">improved_percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> improved <span class="sc">/</span> persons, <span class="dv">1</span>))</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  test <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(rates<span class="sc">$</span>improved, rates<span class="sc">$</span>persons, <span class="at">correct =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  rates <span class="sc">|&gt;</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">chisq =</span> <span class="fu">unname</span>(test<span class="sc">$</span>statistic), <span class="at">p =</span> test<span class="sc">$</span>p.value)</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>windows <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>score,               <span class="sc">~</span>pre, <span class="sc">~</span>post,</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ToleranceDiversity"</span>, <span class="st">"T0"</span>, <span class="st">"T1"</span>,</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ToleranceDiversity"</span>, <span class="st">"T2"</span>, <span class="st">"T3"</span>,</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"womenAttitude_full"</span>, <span class="st">"T0"</span>, <span class="st">"T1"</span>,</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"womenAttitude_full"</span>, <span class="st">"T2"</span>, <span class="st">"T3"</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>window_rates <span class="ot">&lt;-</span> windows <span class="sc">|&gt;</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rates =</span> <span class="fu">pmap</span>(<span class="fu">list</span>(score, pre, post), improvement)) <span class="sc">|&gt;</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(rates)</span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>window_rates <span class="sc">|&gt;</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(chisq, p), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>item_wording <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">%in%</span> scale_items<span class="sc">$</span>ToleranceDiversity) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">reversed =</span> item <span class="sc">%in%</span> reverse_keyed)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 4%">
-<col style="width: 5%">
-<col style="width: 13%">
-<col style="width: 8%">
+<col style="width: 21%">
+<col style="width: 68%">
 <col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 17%">
-<col style="width: 6%">
-<col style="width: 6%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">score</th>
+<th style="text-align: left;">item</th>
+<th style="text-align: left;">text</th>
+<th style="text-align: left;">reversed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ToleranceDiversity1</td>
+<td style="text-align: left;">Roma/Sinti women threaten the values of Serbia.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ToleranceDiversity2</td>
+<td style="text-align: left;">Roma/Sinti women enrich the prosperity of Serbia.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ToleranceDiversity3</td>
+<td style="text-align: left;">I would not mind Roma/Sinti women in my residential area.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ToleranceDiversity4</td>
+<td style="text-align: left;">I sympathize with Roma/Sinti women.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ToleranceDiversity5</td>
+<td style="text-align: left;">I enjoy meeting people whose background is different from mine.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>How reliable are the items in January?</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>tol_alpha <span class="ot">&lt;-</span> t0 <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">num_range</span>(<span class="st">"ToleranceDiversity"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  psych<span class="sc">::</span><span class="fu">alpha</span>() <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pluck</span>(<span class="st">"total"</span>, <span class="st">"raw_alpha"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(tol_alpha, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.686</code></pre>
+</div>
+</div>
+<p>Cronbach’s α is .69: almost a third of the variance of the score is measurement error. The band of reliable change in step 2 takes it into account.</p>
+<p><span class="next">Next →</span> Step 2, the bands: How much does each person change from T0 to T1?</p>
+</section>
+<section id="step-2-the-bands-both-groups" class="level5">
+<h5 class="anchored" data-anchor-id="step-2-the-bands-both-groups">Step 2 · The bands <span class="data-badge data-both">both groups</span></h5>
+<p><strong>How much does each person change from T0 to T1?</strong> The persons who answered in January and in March, their score before and after, and its change:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tol_T01 <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Occasion <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"T0"</span>, <span class="st">"T1"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, condition, Occasion, <span class="at">value =</span> ToleranceDiversity) <span class="sc">|&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Occasion, <span class="at">values_from =</span> value) <span class="sc">|&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">before =</span> T0, <span class="at">after =</span> T1) <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> after <span class="sc">-</span> before)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>tol_T01 <span class="sc">|&gt;</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons     =</span> <span class="fu">n</span>(),</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">SD_before   =</span> <span class="fu">sd</span>(before),</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_change =</span> <span class="fu">mean</span>(change),</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">condition</th>
+<th style="text-align: right;">persons</th>
+<th style="text-align: right;">SD_before</th>
+<th style="text-align: right;">mean_change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">1.701</td>
+<td style="text-align: right;">0.098</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: right;">147</td>
+<td style="text-align: right;">1.706</td>
+<td style="text-align: right;">0.067</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>Where does change begin?</strong> The three bands: any difference, one step on one of the five items, and the band of reliable change:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tol_step <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">5</span>                     <span class="co"># one step on one of five items</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>tol_band <span class="ot">&lt;-</span> <span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sd</span>(tol_T01<span class="sc">$</span>before) <span class="sc">*</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> tol_alpha))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="at">strict =</span> <span class="dv">0</span>, <span class="at">item_step =</span> tol_step, <span class="at">reliable =</span> tol_band) <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   strict item_step  reliable 
+    0.000     0.200     2.641 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_changes</span>(tol_T01, <span class="at">band =</span> tol_band, <span class="at">k =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="13_movers_files/figure-html/ch13-tol-bands-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>281 persons answered at both waves. Their changes spread widely, from -7.8 to 8.0 points, but most of them are small: a change counts as reliable only beyond ±2.64 points, more than a quarter of the scale, and 91 % of all changes lie within this band (shaded).</p>
+<p><span class="next">Next →</span> Step 3, movers while the experimental group trains: Who moves from T0 to T1?</p>
+</section>
+</section>
+<section id="the-movers-steps-3-to-5" class="level4 group group-both">
+<h4 class="group group-both anchored" data-anchor-id="the-movers-steps-3-to-5">The movers · Steps 3 to 5</h4>
+<section id="step-3-movers-while-the-experimental-group-trains-both-groups" class="level5">
+<h5 class="anchored" data-anchor-id="step-3-movers-while-the-experimental-group-trains-both-groups">Step 3 · Movers while the experimental group trains <span class="data-badge data-both">both groups</span></h5>
+<p><strong>Who moves from T0 to T1?</strong> Under each criterion, the persons who increased, stayed the same or decreased, and their share of their group:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>tol_movers <span class="ot">&lt;-</span> tol_T01 <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">strict    =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default   =</span> <span class="st">"same"</span>),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">item_step =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span>  tol_step <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="sc">-</span>tol_step <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default           =</span> <span class="st">"same"</span>),</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">reliable  =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span>  tol_band <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="sc">-</span>tol_band <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default           =</span> <span class="st">"same"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">c</span>(strict, item_step, reliable), <span class="at">names_to =</span> <span class="st">"criterion"</span>,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"direction"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(condition, criterion, direction) <span class="sc">|&gt;</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>),</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">.by =</span> <span class="fu">c</span>(condition, criterion))</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="co"># persons (and percent of the group) in each direction</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>tol_movers <span class="sc">|&gt;</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cell =</span> <span class="fu">sprintf</span>(<span class="st">"%d (%.1f %%)"</span>, n, percent)) <span class="sc">|&gt;</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(criterion, condition, direction, cell) <span class="sc">|&gt;</span></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> direction, <span class="at">values_from =</span> cell) <span class="sc">|&gt;</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(criterion, condition, decreased, same, increased) <span class="sc">|&gt;</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">match</span>(criterion, <span class="fu">c</span>(<span class="st">"strict"</span>, <span class="st">"item_step"</span>, <span class="st">"reliable"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">criterion</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">decreased</th>
+<th style="text-align: left;">same</th>
+<th style="text-align: left;">increased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">strict</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">57 (42.5 %)</td>
+<td style="text-align: left;">23 (17.2 %)</td>
+<td style="text-align: left;">54 (40.3 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">strict</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">64 (43.5 %)</td>
+<td style="text-align: left;">14 (9.5 %)</td>
+<td style="text-align: left;">69 (46.9 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">item_step</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">48 (35.8 %)</td>
+<td style="text-align: left;">34 (25.4 %)</td>
+<td style="text-align: left;">52 (38.8 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">item_step</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">63 (42.9 %)</td>
+<td style="text-align: left;">24 (16.3 %)</td>
+<td style="text-align: left;">60 (40.8 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reliable</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">3 (2.2 %)</td>
+<td style="text-align: left;">125 (93.3 %)</td>
+<td style="text-align: left;">6 (4.5 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reliable</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">7 (4.8 %)</td>
+<td style="text-align: left;">130 (88.4 %)</td>
+<td style="text-align: left;">10 (6.8 %)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Under the strict criterion almost everyone moves: only 17.2 % of the control group and 9.5 % of the experimental group keep their score exactly. The experimental group increases somewhat more often (46.9 % against 40.3 %), but it decreases as often (43.5 % against 42.5 %). The item step counts a few more persons as unchanged (25.4 % and 16.3 %). The band of reliable change holds 93.3 % of the control group and 88.4 % of the experimental group; beyond it, the experimental group both improves (6.8 % against 4.5 %) and declines (4.8 % against 2.2 %) more often.</p>
+<p><span class="next">Next →</span> Step 4, movers from baseline: How do the persons who answered at every wave move?</p>
+</section>
+<section id="step-4-movers-from-baseline-both-groups" class="level5">
+<h5 class="anchored" data-anchor-id="step-4-movers-from-baseline-both-groups">Step 4 · Movers from baseline <span class="data-badge data-both">both groups</span></h5>
+<p><strong>How do the persons who answered at every wave move?</strong> Their four scores side by side, and the change from T0 to each later wave, strict criterion:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>tol_complete <span class="ot">&lt;-</span> complete <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, condition, Occasion, <span class="at">value =</span> ToleranceDiversity) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Occasion, <span class="at">values_from =</span> value)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>tol_baseline <span class="ot">&lt;-</span> tol_complete <span class="sc">|&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">c</span>(T1, T2, T3), <span class="at">names_to =</span> <span class="st">"until"</span>, <span class="at">values_to =</span> <span class="st">"after"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T0, after) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change    =</span> after <span class="sc">-</span> T0,</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">direction =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default   =</span> <span class="st">"same"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(until, condition, direction) <span class="sc">|&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>), <span class="at">.by =</span> <span class="fu">c</span>(until, condition))</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co"># persons (and percent of the group) in each direction</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>tol_baseline <span class="sc">|&gt;</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cell =</span> <span class="fu">sprintf</span>(<span class="st">"%d (%.1f %%)"</span>, n, percent)) <span class="sc">|&gt;</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(until, condition, direction, cell) <span class="sc">|&gt;</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> direction, <span class="at">values_from =</span> cell) <span class="sc">|&gt;</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(until, condition, decreased, same, increased)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">until</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">decreased</th>
+<th style="text-align: left;">same</th>
+<th style="text-align: left;">increased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">T1</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">30 (38.5 %)</td>
+<td style="text-align: left;">20 (25.6 %)</td>
+<td style="text-align: left;">28 (35.9 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T1</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">25 (51.0 %)</td>
+<td style="text-align: left;">4 (8.2 %)</td>
+<td style="text-align: left;">20 (40.8 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">24 (30.8 %)</td>
+<td style="text-align: left;">18 (23.1 %)</td>
+<td style="text-align: left;">36 (46.2 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">22 (44.9 %)</td>
+<td style="text-align: left;">6 (12.2 %)</td>
+<td style="text-align: left;">21 (42.9 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T3</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">31 (39.7 %)</td>
+<td style="text-align: left;">12 (15.4 %)</td>
+<td style="text-align: left;">35 (44.9 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T3</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">24 (49.0 %)</td>
+<td style="text-align: left;">2 (4.1 %)</td>
+<td style="text-align: left;">23 (46.9 %)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Neither group pulls ahead over the year. By March, September and December, 40.8 %, 42.9 % and 46.9 % of the experimental group have increased since January, against 35.9 %, 46.2 % and 44.9 % of the control group. At every wave the experimental group has also decreased more often (51.0 %, 44.9 % and 49.0 %, against 38.5 %, 30.8 % and 39.7 %).</p>
+<p><span class="next">Next →</span> Step 5, each group in its own training window: Does the group in training improve more often?</p>
+</section>
+<section id="step-5-each-group-in-its-own-training-window-both-groups" class="level5">
+<h5 class="anchored" data-anchor-id="step-5-each-group-in-its-own-training-window-both-groups">Step 5 · Each group in its own training window <span class="data-badge data-both">both groups</span></h5>
+<p><strong>Does the group in training improve more often?</strong> On the same persons: the number who improved and declined from T0 to T1 and from T2 to T3, and the two-proportion test of the share who improved:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>tol_window_T01 <span class="ot">&lt;-</span> tol_complete <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T0, T1) <span class="sc">|&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> T1 <span class="sc">-</span> T0) <span class="sc">|&gt;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons  =</span> <span class="fu">n</span>(),</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">improved =</span> <span class="fu">sum</span>(change <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">declined =</span> <span class="fu">sum</span>(change <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">improved_percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> improved <span class="sc">/</span> persons, <span class="dv">1</span>))</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>tol_test_T01 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(tol_window_T01<span class="sc">$</span>improved, tol_window_T01<span class="sc">$</span>persons,</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>tol_window_T23 <span class="ot">&lt;-</span> tol_complete <span class="sc">|&gt;</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T2, T3) <span class="sc">|&gt;</span></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> T3 <span class="sc">-</span> T2) <span class="sc">|&gt;</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons  =</span> <span class="fu">n</span>(),</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">improved =</span> <span class="fu">sum</span>(change <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">declined =</span> <span class="fu">sum</span>(change <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">improved_percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> improved <span class="sc">/</span> persons, <span class="dv">1</span>))</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>tol_test_T23 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(tol_window_T23<span class="sc">$</span>improved, tol_window_T23<span class="sc">$</span>persons,</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>tol_windows <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>  tol_window_T01 <span class="sc">|&gt;</span></span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">chisq =</span> <span class="fu">unname</span>(tol_test_T01<span class="sc">$</span>statistic), <span class="at">p =</span> tol_test_T01<span class="sc">$</span>p.value,</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>           <span class="at">pre =</span> <span class="st">"T0"</span>, <span class="at">post =</span> <span class="st">"T1"</span>),</span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>  tol_window_T23 <span class="sc">|&gt;</span></span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">chisq =</span> <span class="fu">unname</span>(tol_test_T23<span class="sc">$</span>statistic), <span class="at">p =</span> tol_test_T23<span class="sc">$</span>p.value,</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>           <span class="at">pre =</span> <span class="st">"T2"</span>, <span class="at">post =</span> <span class="st">"T3"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(pre, post)</span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a>tol_windows <span class="sc">|&gt;</span></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(chisq, p), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 16%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
 <th style="text-align: left;">pre</th>
 <th style="text-align: left;">post</th>
 <th style="text-align: left;">condition</th>
@@ -1004,7 +836,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">ToleranceDiversity</td>
 <td style="text-align: left;">T0</td>
 <td style="text-align: left;">T1</td>
 <td style="text-align: left;">Control</td>
@@ -1016,7 +847,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.578</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ToleranceDiversity</td>
 <td style="text-align: left;">T0</td>
 <td style="text-align: left;">T1</td>
 <td style="text-align: left;">Experimental</td>
@@ -1028,7 +858,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.578</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ToleranceDiversity</td>
 <td style="text-align: left;">T2</td>
 <td style="text-align: left;">T3</td>
 <td style="text-align: left;">Control</td>
@@ -1040,7 +869,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.566</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ToleranceDiversity</td>
 <td style="text-align: left;">T2</td>
 <td style="text-align: left;">T3</td>
 <td style="text-align: left;">Experimental</td>
@@ -1051,8 +879,600 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.329</td>
 <td style="text-align: right;">0.566</td>
 </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_rates</span>(tol_windows)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="13_movers_files/figure-html/ch13-tol-windows-plot-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>While the experimental group trains, 40.8 % of its members improve, against 35.9 % of the waiting control group (χ²(1) = 0.31, p = .578). While the control group trains, it improves less often than the experimental group, which now waits (39.7 % against 44.9 %, χ²(1) = 0.33, p = .566).</p>
+<p><strong>Does the test apply?</strong> The smallest count the test expects in each window, against the 5 it needs in every cell:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>tol_expected <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">window   =</span> <span class="fu">c</span>(<span class="st">"T0 to T1"</span>, <span class="st">"T2 to T3"</span>),</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">smallest =</span> <span class="fu">map_dbl</span>(<span class="fu">list</span>(tol_window_T01, tol_window_T23),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                     \(window) <span class="fu">min</span>(<span class="fu">expected_counts</span>(window)))) <span class="sc">|&gt;</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">enough =</span> smallest <span class="sc">&gt;=</span> <span class="dv">5</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>tol_expected <span class="sc">|&gt;</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">smallest =</span> <span class="fu">round</span>(smallest, <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">window</th>
+<th style="text-align: right;">smallest</th>
+<th style="text-align: left;">enough</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
-<td style="text-align: left;">womenAttitude_full</td>
+<td style="text-align: left;">T0 to T1</td>
+<td style="text-align: right;">18.5</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2 to T3</td>
+<td style="text-align: right;">20.4</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Every cell expects at least 18.5 persons in both windows, so the test applies.</p>
+<p><span class="next">Next →</span> Step 6, the verdict: Does the group in training improve more often in both windows?</p>
+</section>
+</section>
+<section id="the-verdict-steps-6-and-7" class="level4 group group-verdict">
+<h4 class="group group-verdict anchored" data-anchor-id="the-verdict-steps-6-and-7">The verdict · Steps 6 and 7</h4>
+<section id="step-6-the-verdict" class="level5">
+<h5 class="anchored" data-anchor-id="step-6-the-verdict">Step 6 · The verdict</h5>
+<p><strong>Does the group in training improve more often in both windows?</strong> In each window, the share who improved in the group in training and in the waiting group:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>tol_verdict <span class="ot">&lt;-</span> tol_windows <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">trains =</span> <span class="fu">if_else</span>(pre <span class="sc">==</span> <span class="st">"T0"</span>, <span class="st">"Experimental"</span>, <span class="st">"Control"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">in_training =</span> improved_percent[condition <span class="sc">==</span> trains],</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">waiting     =</span> improved_percent[condition <span class="sc">!=</span> trains],</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">p           =</span> <span class="fu">first</span>(p),</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> <span class="fu">c</span>(pre, post)) <span class="sc">|&gt;</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">as_expected =</span> in_training <span class="sc">&gt;</span> waiting,</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">significant =</span> p <span class="sc">&lt;</span> .<span class="dv">05</span>)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>tol_verdict <span class="sc">|&gt;</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">p =</span> <span class="fu">round</span>(p, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">pre</th>
+<th style="text-align: left;">post</th>
+<th style="text-align: right;">in_training</th>
+<th style="text-align: right;">waiting</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: left;">as_expected</th>
+<th style="text-align: left;">significant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">T0</td>
+<td style="text-align: left;">T1</td>
+<td style="text-align: right;">40.8</td>
+<td style="text-align: right;">35.9</td>
+<td style="text-align: right;">0.578</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">T3</td>
+<td style="text-align: right;">39.7</td>
+<td style="text-align: right;">44.9</td>
+<td style="text-align: right;">0.566</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Only in the first window does the group in training improve more often, and not significantly; in the second, the waiting group does. At the level of single persons, Tolerance Diversity shows no sign of an effect of the training.</p>
+<p><span class="next">Next →</span> Step 7, what follows: Where does the result go from here?</p>
+</section>
+<section id="step-7-what-follows" class="level5">
+<h5 class="anchored" data-anchor-id="step-7-what-follows">Step 7 · What follows</h5>
+<p><strong>Where does the result go from here?</strong> Its rates enter the table at the end of this chapter (13.4), from which Chapter 20 counts the significant mover contrasts among the limits of the results. The movers agree with the means: the Δd of Chapter 9 is not significant in either training window (p = .869 and .268), nor is the latent difference-in-differences of Chapter 11 (p = .665 and .577). The mover analysis adds no evidence of an effect of the training on Tolerance Diversity.</p>
+</section>
+</section>
+</section>
+<section id="women-attitude" class="level3">
+<h3 class="anchored" data-anchor-id="women-attitude">Women Attitude</h3>
+<p><strong>Its path through the steps.</strong> One row per step below; Step 1 uses all January questionnaires <span class="data-badge data-all">all questionnaires</span>, the later steps the persons of both groups <span class="data-badge data-both">both groups</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">How reliable is the score in January?</td>
+<td style="text-align: left;">a third of its variance is measurement error</td>
+<td style="text-align: left;">the bands</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Where does a reliable change begin?</td>
+<td style="text-align: left;">scores near the top; a narrow band</td>
+<td style="text-align: left;">movers</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Who moves from T0 to T1?</td>
+<td style="text-align: left;">the experimental group increases more often</td>
+<td style="text-align: left;">from baseline</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Do the groups drift apart over the year?</td>
+<td style="text-align: left;">the experimental group stays ahead at every later wave</td>
+<td style="text-align: left;">own windows</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Does the group in training improve more often?</td>
+<td style="text-align: left;">yes in both windows; neither difference significant</td>
+<td style="text-align: left;">verdict</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">The verdict</td>
+<td style="text-align: left;">the pattern of an effect, not significant</td>
+<td style="text-align: left;">what follows</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Where next?</td>
+<td style="text-align: left;">the table of 13.4 and Chapter 20</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<section id="the-score-steps-1-and-2-1" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-score-steps-1-and-2-1">The score · Steps 1 and 2</h4>
+<section id="step-1-the-score-all-questionnaires-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-1-the-score-all-questionnaires-1">Step 1 · The score <span class="data-badge data-all">all questionnaires</span></h5>
+<p><strong>Which items enter the score?</strong> Nine statements that every woman should be free to choose, from school and work to marriage and children; none is reverse-keyed. The score is the mean of all nine, items 6 and 7 at the ceiling included:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>item_wording <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">%in%</span> scale_items<span class="sc">$</span>womenAttitude) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">reversed =</span> item <span class="sc">%in%</span> reverse_keyed)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 78%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">item</th>
+<th style="text-align: left;">text</th>
+<th style="text-align: left;">reversed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude1</td>
+<td style="text-align: left;">Every woman should be free to choose whether to complete secondary school.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude2</td>
+<td style="text-align: left;">Every woman should be free to choose whether to work for pay.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude3</td>
+<td style="text-align: left;">Every woman should be free to choose to prioritize her work for pay over domestic duties.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude4</td>
+<td style="text-align: left;">Every woman should be free to choose what to do with any money that she earns.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude5</td>
+<td style="text-align: left;">Every woman should be free to choose to purchase land, a house, or other valuable goods.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude6</td>
+<td style="text-align: left;">Every woman should be free to choose when to get married.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude7</td>
+<td style="text-align: left;">Every woman should be free to choose to divorce or end her marriage.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude8</td>
+<td style="text-align: left;">Every woman should be free to choose whether and when to have children.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude9</td>
+<td style="text-align: left;">Every woman should be free to choose not to have any more children.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>How reliable are the items in January?</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>wom_alpha <span class="ot">&lt;-</span> t0 <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">num_range</span>(<span class="st">"womenAttitude"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  psych<span class="sc">::</span><span class="fu">alpha</span>() <span class="sc">|&gt;</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pluck</span>(<span class="st">"total"</span>, <span class="st">"raw_alpha"</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(wom_alpha, <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.665</code></pre>
+</div>
+</div>
+<p>Cronbach’s α is .66, a little lower than for Tolerance Diversity: a third of the variance of the score is measurement error.</p>
+<p><span class="next">Next →</span> Step 2, the bands: How much does each person change from T0 to T1?</p>
+</section>
+<section id="step-2-the-bands-both-groups-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-2-the-bands-both-groups-1">Step 2 · The bands <span class="data-badge data-both">both groups</span></h5>
+<p><strong>How much does each person change from T0 to T1?</strong> The persons who answered in January and in March, their score before and after, and its change:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>wom_T01 <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Occasion <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"T0"</span>, <span class="st">"T1"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, condition, Occasion, <span class="at">value =</span> womenAttitude_full) <span class="sc">|&gt;</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Occasion, <span class="at">values_from =</span> value) <span class="sc">|&gt;</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">before =</span> T0, <span class="at">after =</span> T1) <span class="sc">|&gt;</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> after <span class="sc">-</span> before)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>wom_T01 <span class="sc">|&gt;</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons     =</span> <span class="fu">n</span>(),</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">SD_before   =</span> <span class="fu">sd</span>(before),</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_change =</span> <span class="fu">mean</span>(change),</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">condition</th>
+<th style="text-align: right;">persons</th>
+<th style="text-align: right;">SD_before</th>
+<th style="text-align: right;">mean_change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Control</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">0.756</td>
+<td style="text-align: right;">-0.038</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: right;">148</td>
+<td style="text-align: right;">0.741</td>
+<td style="text-align: right;">0.143</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>Where does change begin?</strong> The three bands: any difference, one step on one of the nine items, and the band of reliable change:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>wom_step <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> <span class="dv">9</span>                     <span class="co"># one step on one of nine items</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>wom_band <span class="ot">&lt;-</span> <span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sd</span>(wom_T01<span class="sc">$</span>before) <span class="sc">*</span> <span class="fu">sqrt</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> wom_alpha))</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="at">strict =</span> <span class="dv">0</span>, <span class="at">item_step =</span> wom_step, <span class="at">reliable =</span> wom_band) <span class="sc">|&gt;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   strict item_step  reliable 
+    0.000     0.111     1.199 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_changes</span>(wom_T01, <span class="at">band =</span> wom_band, <span class="at">k =</span> <span class="dv">9</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="13_movers_files/figure-html/ch13-wom-bands-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>280 persons answered at both waves. Their scores sit close to the top of the scale: 51 % start at 10, so the scores before vary little (SD = 0.75), and the band of reliable change is narrow, ±1.20 points, less than half that of Tolerance Diversity. Still, 89 % of all changes lie within it (shaded).</p>
+<p><span class="next">Next →</span> Step 3, movers while the experimental group trains: Who moves from T0 to T1?</p>
+</section>
+</section>
+<section id="the-movers-steps-3-to-5-1" class="level4 group group-both">
+<h4 class="group group-both anchored" data-anchor-id="the-movers-steps-3-to-5-1">The movers · Steps 3 to 5</h4>
+<section id="step-3-movers-while-the-experimental-group-trains-both-groups-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-3-movers-while-the-experimental-group-trains-both-groups-1">Step 3 · Movers while the experimental group trains <span class="data-badge data-both">both groups</span></h5>
+<p><strong>Who moves from T0 to T1?</strong> Under each criterion, the persons who increased, stayed the same or decreased, and their share of their group:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>wom_movers <span class="ot">&lt;-</span> wom_T01 <span class="sc">|&gt;</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">strict    =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default   =</span> <span class="st">"same"</span>),</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">item_step =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span>  wom_step <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="sc">-</span>wom_step <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default           =</span> <span class="st">"same"</span>),</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">reliable  =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span>  wom_band <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="sc">-</span>wom_band <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default           =</span> <span class="st">"same"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">c</span>(strict, item_step, reliable), <span class="at">names_to =</span> <span class="st">"criterion"</span>,</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"direction"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(condition, criterion, direction) <span class="sc">|&gt;</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>),</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">.by =</span> <span class="fu">c</span>(condition, criterion))</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="co"># persons (and percent of the group) in each direction</span></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>wom_movers <span class="sc">|&gt;</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cell =</span> <span class="fu">sprintf</span>(<span class="st">"%d (%.1f %%)"</span>, n, percent)) <span class="sc">|&gt;</span></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(criterion, condition, direction, cell) <span class="sc">|&gt;</span></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> direction, <span class="at">values_from =</span> cell) <span class="sc">|&gt;</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(criterion, condition, decreased, same, increased) <span class="sc">|&gt;</span></span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">match</span>(criterion, <span class="fu">c</span>(<span class="st">"strict"</span>, <span class="st">"item_step"</span>, <span class="st">"reliable"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">criterion</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">decreased</th>
+<th style="text-align: left;">same</th>
+<th style="text-align: left;">increased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">strict</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">28 (21.2 %)</td>
+<td style="text-align: left;">67 (50.8 %)</td>
+<td style="text-align: left;">37 (28.0 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">strict</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">27 (18.2 %)</td>
+<td style="text-align: left;">71 (48.0 %)</td>
+<td style="text-align: left;">50 (33.8 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">item_step</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">24 (18.2 %)</td>
+<td style="text-align: left;">79 (59.8 %)</td>
+<td style="text-align: left;">29 (22.0 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">item_step</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">26 (17.6 %)</td>
+<td style="text-align: left;">75 (50.7 %)</td>
+<td style="text-align: left;">47 (31.8 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">reliable</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">10 (7.6 %)</td>
+<td style="text-align: left;">114 (86.4 %)</td>
+<td style="text-align: left;">8 (6.1 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">reliable</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">4 (2.7 %)</td>
+<td style="text-align: left;">134 (90.5 %)</td>
+<td style="text-align: left;">10 (6.8 %)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Under the strict criterion about half of each group keep their score exactly (50.8 % of the control group, 48.0 % of the experimental group), nearly all of them at the top of the scale. The experimental group increases more often (33.8 % against 28.0 %), and the item step widens the gap (31.8 % against 22.0 %). The band of reliable change holds 86.4 % of the control group and 90.5 % of the experimental group; beyond it, both improve about equally often (6.1 % and 6.8 %), but the control group declines more often (7.6 % against 2.7 %).</p>
+<p><span class="next">Next →</span> Step 4, movers from baseline: How do the persons who answered at every wave move?</p>
+</section>
+<section id="step-4-movers-from-baseline-both-groups-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-4-movers-from-baseline-both-groups-1">Step 4 · Movers from baseline <span class="data-badge data-both">both groups</span></h5>
+<p><strong>How do the persons who answered at every wave move?</strong> Their four scores side by side, and the change from T0 to each later wave, strict criterion:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>wom_complete <span class="ot">&lt;-</span> complete <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, condition, Occasion, <span class="at">value =</span> womenAttitude_full) <span class="sc">|&gt;</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> Occasion, <span class="at">values_from =</span> value)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>wom_baseline <span class="ot">&lt;-</span> wom_complete <span class="sc">|&gt;</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">c</span>(T1, T2, T3), <span class="at">names_to =</span> <span class="st">"until"</span>, <span class="at">values_to =</span> <span class="st">"after"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T0, after) <span class="sc">|&gt;</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change    =</span> after <span class="sc">-</span> T0,</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">direction =</span> <span class="fu">case_when</span>(change <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"increased"</span>,</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>                               change <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"decreased"</span>,</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>                               <span class="at">.default   =</span> <span class="st">"same"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(until, condition, direction) <span class="sc">|&gt;</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="dv">1</span>), <span class="at">.by =</span> <span class="fu">c</span>(until, condition))</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a><span class="co"># persons (and percent of the group) in each direction</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>wom_baseline <span class="sc">|&gt;</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cell =</span> <span class="fu">sprintf</span>(<span class="st">"%d (%.1f %%)"</span>, n, percent)) <span class="sc">|&gt;</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(until, condition, direction, cell) <span class="sc">|&gt;</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> direction, <span class="at">values_from =</span> cell) <span class="sc">|&gt;</span></span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(until, condition, decreased, same, increased)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">until</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">decreased</th>
+<th style="text-align: left;">same</th>
+<th style="text-align: left;">increased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">T1</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">19 (24.4 %)</td>
+<td style="text-align: left;">41 (52.6 %)</td>
+<td style="text-align: left;">18 (23.1 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T1</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">9 (18.4 %)</td>
+<td style="text-align: left;">21 (42.9 %)</td>
+<td style="text-align: left;">19 (38.8 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">15 (19.2 %)</td>
+<td style="text-align: left;">45 (57.7 %)</td>
+<td style="text-align: left;">18 (23.1 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">5 (10.2 %)</td>
+<td style="text-align: left;">23 (46.9 %)</td>
+<td style="text-align: left;">21 (42.9 %)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T3</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">15 (19.2 %)</td>
+<td style="text-align: left;">43 (55.1 %)</td>
+<td style="text-align: left;">20 (25.6 %)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T3</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">10 (20.4 %)</td>
+<td style="text-align: left;">21 (42.9 %)</td>
+<td style="text-align: left;">18 (36.7 %)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The experimental group has more often increased since January at every later wave: 38.8 %, 42.9 % and 36.7 % by March, September and December, against 23.1 %, 23.1 % and 25.6 % of the control group, more than half of which keeps its January score at each wave (52.6 %, 57.7 % and 55.1 %). The gain of the spring stays, and the control group does not catch up with its own training.</p>
+<p><span class="next">Next →</span> Step 5, each group in its own training window: Does the group in training improve more often?</p>
+</section>
+<section id="step-5-each-group-in-its-own-training-window-both-groups-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-5-each-group-in-its-own-training-window-both-groups-1">Step 5 · Each group in its own training window <span class="data-badge data-both">both groups</span></h5>
+<p><strong>Does the group in training improve more often?</strong> On the same persons: the number who improved and declined from T0 to T1 and from T2 to T3, and the two-proportion test of the share who improved:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>wom_window_T01 <span class="ot">&lt;-</span> wom_complete <span class="sc">|&gt;</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T0, T1) <span class="sc">|&gt;</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> T1 <span class="sc">-</span> T0) <span class="sc">|&gt;</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons  =</span> <span class="fu">n</span>(),</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">improved =</span> <span class="fu">sum</span>(change <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">declined =</span> <span class="fu">sum</span>(change <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">improved_percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> improved <span class="sc">/</span> persons, <span class="dv">1</span>))</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>wom_test_T01 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(wom_window_T01<span class="sc">$</span>improved, wom_window_T01<span class="sc">$</span>persons,</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>wom_window_T23 <span class="ot">&lt;-</span> wom_complete <span class="sc">|&gt;</span></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(T2, T3) <span class="sc">|&gt;</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">change =</span> T3 <span class="sc">-</span> T2) <span class="sc">|&gt;</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">persons  =</span> <span class="fu">n</span>(),</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">improved =</span> <span class="fu">sum</span>(change <span class="sc">&gt;</span> <span class="dv">0</span>),</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">declined =</span> <span class="fu">sum</span>(change <span class="sc">&lt;</span> <span class="dv">0</span>),</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> condition) <span class="sc">|&gt;</span></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(condition) <span class="sc">|&gt;</span></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">improved_percent =</span> <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> improved <span class="sc">/</span> persons, <span class="dv">1</span>))</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>wom_test_T23 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(wom_window_T23<span class="sc">$</span>improved, wom_window_T23<span class="sc">$</span>persons,</span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>                          <span class="at">correct =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>wom_windows <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>  wom_window_T01 <span class="sc">|&gt;</span></span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">chisq =</span> <span class="fu">unname</span>(wom_test_T01<span class="sc">$</span>statistic), <span class="at">p =</span> wom_test_T01<span class="sc">$</span>p.value,</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>           <span class="at">pre =</span> <span class="st">"T0"</span>, <span class="at">post =</span> <span class="st">"T1"</span>),</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>  wom_window_T23 <span class="sc">|&gt;</span></span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">chisq =</span> <span class="fu">unname</span>(wom_test_T23<span class="sc">$</span>statistic), <span class="at">p =</span> wom_test_T23<span class="sc">$</span>p.value,</span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>           <span class="at">pre =</span> <span class="st">"T2"</span>, <span class="at">post =</span> <span class="st">"T3"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(pre, post)</span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a>wom_windows <span class="sc">|&gt;</span></span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(chisq, p), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 16%">
+<col style="width: 10%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">pre</th>
+<th style="text-align: left;">post</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: right;">persons</th>
+<th style="text-align: right;">improved</th>
+<th style="text-align: right;">declined</th>
+<th style="text-align: right;">improved_percent</th>
+<th style="text-align: right;">chisq</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td style="text-align: left;">T0</td>
 <td style="text-align: left;">T1</td>
 <td style="text-align: left;">Control</td>
@@ -1064,7 +1484,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.058</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">womenAttitude_full</td>
 <td style="text-align: left;">T0</td>
 <td style="text-align: left;">T1</td>
 <td style="text-align: left;">Experimental</td>
@@ -1076,7 +1495,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.058</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">womenAttitude_full</td>
 <td style="text-align: left;">T2</td>
 <td style="text-align: left;">T3</td>
 <td style="text-align: left;">Control</td>
@@ -1088,7 +1506,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: right;">0.375</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">womenAttitude_full</td>
 <td style="text-align: left;">T2</td>
 <td style="text-align: left;">T3</td>
 <td style="text-align: left;">Experimental</td>
@@ -1104,9 +1521,211 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>No window separates the groups significantly. The largest contrast points the expected way: from T0 to T1, the freshly trained experimental group improves its Women Attitude more often than the waiting control group (38.8 % against 23.1 %, χ²(1) = 3.59, p = 0.058), and in the control group’s window the control group improves more often (20.5 % against 14.3 %, p = 0.375). Tolerance Diversity shows no such pattern. Together with the null latent difference-in-differences of both constructs (Chapter 11), the mover analysis adds no evidence of a training effect on them.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(<span class="fu">list</span>(<span class="at">alphas =</span> alphas, <span class="at">window_rates =</span> window_rates), <span class="st">"cache/movers.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_rates</span>(wom_windows)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="13_movers_files/figure-html/ch13-wom-windows-plot-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>While the experimental group trains, 38.8 % of its members improve, against 23.1 % of the waiting control group (χ²(1) = 3.59, p = .058), just short of significance. While the control group trains, it improves more often than the experimental group, which now waits (20.5 % against 14.3 %, χ²(1) = 0.79, p = .375).</p>
+<p><strong>Does the test apply?</strong> The smallest count the test expects in each window, against the 5 it needs in every cell:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>wom_expected <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">window   =</span> <span class="fu">c</span>(<span class="st">"T0 to T1"</span>, <span class="st">"T2 to T3"</span>),</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">smallest =</span> <span class="fu">map_dbl</span>(<span class="fu">list</span>(wom_window_T01, wom_window_T23),</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>                     \(window) <span class="fu">min</span>(<span class="fu">expected_counts</span>(window)))) <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">enough =</span> smallest <span class="sc">&gt;=</span> <span class="dv">5</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>wom_expected <span class="sc">|&gt;</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">smallest =</span> <span class="fu">round</span>(smallest, <span class="dv">1</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">window</th>
+<th style="text-align: right;">smallest</th>
+<th style="text-align: left;">enough</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">T0 to T1</td>
+<td style="text-align: right;">14.3</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2 to T3</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Every cell expects at least 8.9 persons in both windows, so the test applies.</p>
+<p><span class="next">Next →</span> Step 6, the verdict: Does the group in training improve more often in both windows?</p>
+</section>
+</section>
+<section id="the-verdict-steps-6-and-7-1" class="level4 group group-verdict">
+<h4 class="group group-verdict anchored" data-anchor-id="the-verdict-steps-6-and-7-1">The verdict · Steps 6 and 7</h4>
+<section id="step-6-the-verdict-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-6-the-verdict-1">Step 6 · The verdict</h5>
+<p><strong>Does the group in training improve more often in both windows?</strong> In each window, the share who improved in the group in training and in the waiting group:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>wom_verdict <span class="ot">&lt;-</span> wom_windows <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">trains =</span> <span class="fu">if_else</span>(pre <span class="sc">==</span> <span class="st">"T0"</span>, <span class="st">"Experimental"</span>, <span class="st">"Control"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">in_training =</span> improved_percent[condition <span class="sc">==</span> trains],</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">waiting     =</span> improved_percent[condition <span class="sc">!=</span> trains],</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">p           =</span> <span class="fu">first</span>(p),</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> <span class="fu">c</span>(pre, post)) <span class="sc">|&gt;</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">as_expected =</span> in_training <span class="sc">&gt;</span> waiting,</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">significant =</span> p <span class="sc">&lt;</span> .<span class="dv">05</span>)</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>wom_verdict <span class="sc">|&gt;</span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">p =</span> <span class="fu">round</span>(p, <span class="dv">3</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">pre</th>
+<th style="text-align: left;">post</th>
+<th style="text-align: right;">in_training</th>
+<th style="text-align: right;">waiting</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: left;">as_expected</th>
+<th style="text-align: left;">significant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">T0</td>
+<td style="text-align: left;">T1</td>
+<td style="text-align: right;">38.8</td>
+<td style="text-align: right;">23.1</td>
+<td style="text-align: right;">0.058</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T2</td>
+<td style="text-align: left;">T3</td>
+<td style="text-align: right;">20.5</td>
+<td style="text-align: right;">14.3</td>
+<td style="text-align: right;">0.375</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>In both windows the group in training improves more often, the pattern an effect of the training would leave. Neither difference is significant; the larger one, while the experimental group trains, just misses (p = .058).</p>
+<p><span class="next">Next →</span> Step 7, what follows: Where does the result go from here?</p>
+</section>
+<section id="step-7-what-follows-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-7-what-follows-1">Step 7 · What follows</h5>
+<p><strong>Where does the result go from here?</strong> Its rates enter the table at the end of this chapter (13.4), from which Chapter 20 counts the significant mover contrasts among the limits of the results. The means tell a similar story: on the score without the two items at the ceiling, the Δd of Chapter 9 is not significant while the experimental group trains (p = .094); while the control group trains it is (p = .022), but not after the correction for multiple testing (p<sub>BH</sub> = .096). A latent difference-in-differences does not exist for this scale: Women Attitude stops in Chapter 7, where no measurement model of the control group is possible. The mover analysis points the same way as the Δd, but adds no evidence of an effect of the training on Women Attitude.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="both-scores-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="both-scores-at-a-glance">13.4 Both scores at a glance</h2>
+<p><strong>How do the two scores compare?</strong> One row per score: its items and α, the band of reliable change, the share of each group within the band from T0 to T1, and the share who improved in each training window, the group in training against the waiting group, with the p of their difference:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>alphas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">ToleranceDiversity =</span> tol_alpha, <span class="at">womenAttitude =</span> wom_alpha)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>window_rates <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="at">ToleranceDiversity =</span> tol_windows,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">womenAttitude_full =</span> wom_windows,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">.id =</span> <span class="st">"score"</span>)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>within_band <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="st">`</span><span class="at">Tolerance Diversity</span><span class="st">`</span> <span class="ot">=</span> tol_movers,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>                         <span class="st">`</span><span class="at">Women Attitude</span><span class="st">`</span>      <span class="ot">=</span> wom_movers,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">.id =</span> <span class="st">"score"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(criterion <span class="sc">==</span> <span class="st">"reliable"</span>, direction <span class="sc">==</span> <span class="st">"same"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(score, condition, percent) <span class="sc">|&gt;</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> condition, <span class="at">values_from =</span> percent,</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_prefix =</span> <span class="st">"within_band_"</span>)</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>training_rates <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="st">`</span><span class="at">Tolerance Diversity</span><span class="st">`</span> <span class="ot">=</span> tol_verdict,</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>                            <span class="st">`</span><span class="at">Women Attitude</span><span class="st">`</span>      <span class="ot">=</span> wom_verdict,</span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>                            <span class="at">.id =</span> <span class="st">"score"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">window =</span> <span class="fu">str_c</span>(pre, <span class="st">" to "</span>, post),</span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>         <span class="at">result =</span> <span class="fu">sprintf</span>(<span class="st">"%.1f vs %.1f %% (p = %s)"</span>, in_training, waiting,</span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>                          <span class="fu">apa</span>(p, <span class="dv">3</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(score, window, result) <span class="sc">|&gt;</span></span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> window, <span class="at">values_from =</span> result)</span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">score =</span> <span class="fu">c</span>(<span class="st">"Tolerance Diversity"</span>, <span class="st">"Women Attitude"</span>),</span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">items =</span> <span class="fu">c</span>(<span class="dv">5</span>L, <span class="dv">9</span>L),</span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>       <span class="at">alpha =</span> <span class="fu">unname</span>(alphas),</span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>       <span class="at">band  =</span> <span class="fu">c</span>(tol_band, wom_band)) <span class="sc">|&gt;</span></span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(within_band, <span class="at">by =</span> <span class="st">"score"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(training_rates, <span class="at">by =</span> <span class="st">"score"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 4%">
+<col style="width: 4%">
+<col style="width: 3%">
+<col style="width: 14%">
+<col style="width: 18%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">score</th>
+<th style="text-align: right;">items</th>
+<th style="text-align: right;">alpha</th>
+<th style="text-align: right;">band</th>
+<th style="text-align: right;">within_band_Control</th>
+<th style="text-align: right;">within_band_Experimental</th>
+<th style="text-align: left;">T0 to T1</th>
+<th style="text-align: left;">T2 to T3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tolerance Diversity</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.69</td>
+<td style="text-align: right;">2.64</td>
+<td style="text-align: right;">93.3</td>
+<td style="text-align: right;">88.4</td>
+<td style="text-align: left;">40.8 vs 35.9 % (p = .578)</td>
+<td style="text-align: left;">39.7 vs 44.9 % (p = .566)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Women Attitude</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.66</td>
+<td style="text-align: right;">1.20</td>
+<td style="text-align: right;">86.4</td>
+<td style="text-align: right;">90.5</td>
+<td style="text-align: left;">38.8 vs 23.1 % (p = .058)</td>
+<td style="text-align: left;">20.5 vs 14.3 % (p = .375)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Few persons change reliably: 86 to 93 % of each group stay within the band of their score. No window separates the groups significantly. The largest contrast, Women Attitude while the experimental group trains, points the expected way (p = .058), and in the control group’s window it is the control group that improves its Women Attitude more often; Tolerance Diversity shows no such pattern. Together with the null latent difference-in-differences of Tolerance Diversity (Chapter 11; Women Attitude stops in Chapter 7 and has none), the mover analysis adds no evidence of an effect of the training on either scale.</p>
+<p>Chapter 14 returns to the differences between the groups and asks whether the training effects hold when other persons and questionnaires are chosen.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(<span class="fu">list</span>(<span class="at">alphas =</span> alphas, <span class="at">window_rates =</span> window_rates), <span class="st">"cache/movers.rds"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 

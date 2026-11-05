@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-30a307ac0d0c77ebb518148b362088db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9f0e0a1ec90ea562bd064d49dae10e89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2c4fae3da3cc6cd46c677ca802383b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,6 +103,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -146,11 +149,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#calibration-sample-and-rules" id="toc-calibration-sample-and-rules" class="nav-link active" data-scroll-target="#calibration-sample-and-rules">15.1 Calibration sample and rules</a></li>
-  <li><a href="#ceiling" id="toc-ceiling" class="nav-link" data-scroll-target="#ceiling">15.2 Ceiling</a></li>
-  <li><a href="#negative-wording" id="toc-negative-wording" class="nav-link" data-scroll-target="#negative-wording">15.3 Negative wording</a></li>
-  <li><a href="#the-womens-attitude-block" id="toc-the-womens-attitude-block" class="nav-link" data-scroll-target="#the-womens-attitude-block">15.4 The women’s attitude block</a></li>
-  <li><a href="#from-102-to-71-items" id="toc-from-102-to-71-items" class="nav-link" data-scroll-target="#from-102-to-71-items">15.5 From 102 to 71 items</a></li>
+  <li><a href="#how-each-rule-is-examined" id="toc-how-each-rule-is-examined" class="nav-link active" data-scroll-target="#how-each-rule-is-examined">15.1 How each rule is examined</a></li>
+  <li><a href="#data-and-tools" id="toc-data-and-tools" class="nav-link" data-scroll-target="#data-and-tools">15.2 Data and tools</a></li>
+  <li><a href="#the-three-rules" id="toc-the-three-rules" class="nav-link" data-scroll-target="#the-three-rules">15.3 The three rules</a>
+  <ul>
+  <li><a href="#ceiling" id="toc-ceiling" class="nav-link" data-scroll-target="#ceiling">Ceiling</a>
+  <ul class="collapse">
+  <li><a href="#the-rule-steps-1-and-2" id="toc-the-rule-steps-1-and-2" class="nav-link" data-scroll-target="#the-rule-steps-1-and-2">The rule · Steps 1 and 2</a></li>
+  <li><a href="#the-evidence-steps-3-and-4" id="toc-the-evidence-steps-3-and-4" class="nav-link" data-scroll-target="#the-evidence-steps-3-and-4">The evidence · Steps 3 and 4</a></li>
+  <li><a href="#what-follows-step-5" id="toc-what-follows-step-5" class="nav-link" data-scroll-target="#what-follows-step-5">What follows · Step 5</a></li>
+  </ul></li>
+  <li><a href="#negative-wording" id="toc-negative-wording" class="nav-link" data-scroll-target="#negative-wording">Negative wording</a>
+  <ul class="collapse">
+  <li><a href="#the-rule-steps-1-and-2-1" id="toc-the-rule-steps-1-and-2-1" class="nav-link" data-scroll-target="#the-rule-steps-1-and-2-1">The rule · Steps 1 and 2</a></li>
+  <li><a href="#the-evidence-steps-3-and-4-1" id="toc-the-evidence-steps-3-and-4-1" class="nav-link" data-scroll-target="#the-evidence-steps-3-and-4-1">The evidence · Steps 3 and 4</a></li>
+  <li><a href="#what-follows-step-5-1" id="toc-what-follows-step-5-1" class="nav-link" data-scroll-target="#what-follows-step-5-1">What follows · Step 5</a></li>
+  </ul></li>
+  <li><a href="#the-womens-attitude-block" id="toc-the-womens-attitude-block" class="nav-link" data-scroll-target="#the-womens-attitude-block">The women’s attitude block</a>
+  <ul class="collapse">
+  <li><a href="#the-rule-steps-1-and-2-2" id="toc-the-rule-steps-1-and-2-2" class="nav-link" data-scroll-target="#the-rule-steps-1-and-2-2">The rule · Steps 1 and 2</a></li>
+  <li><a href="#the-evidence-steps-3-and-4-2" id="toc-the-evidence-steps-3-and-4-2" class="nav-link" data-scroll-target="#the-evidence-steps-3-and-4-2">The evidence · Steps 3 and 4</a></li>
+  <li><a href="#what-follows-step-5-2" id="toc-what-follows-step-5-2" class="nav-link" data-scroll-target="#what-follows-step-5-2">What follows · Step 5</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#all-rules-at-a-glance" id="toc-all-rules-at-a-glance" class="nav-link" data-scroll-target="#all-rules-at-a-glance">15.4 All rules at a glance</a></li>
   </ul>
 </nav>
 </nav>
@@ -190,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The preregistration allowed a psychometric study that would “discard unreliable and redundant items to create more parsimonious measures”. Part D carries it out after the fact, on the questionnaires answered before any training (T0). This chapter takes items out of the pool on three grounds before any network is estimated: answers at the ceiling, negative wording, and the block on attitudes toward women. It also shows that the negatively worded items hardly respond to the training. Feeds the pruning step of the psychometric supplement; Chapters 16 to 18 build on the remaining pool.</p>
+<p>The preregistration allowed a psychometric study that would “discard unreliable and redundant items to create more parsimonious measures”. Part D carries it out after the fact, on the questionnaires answered before any training (T0). This chapter takes items out of the pool by three rules before any network is estimated: answers at the ceiling, negative wording, and the block on attitudes toward women. Each rule goes through the same five steps, from the items it looks at to what its decision means for the scales; on the way, the chapter shows that the negatively worded items hardly respond to the training. A table at the end follows every scale through the three rules. Feeds the pruning step of the psychometric supplement; Chapters 16 to 18 build on the remaining pool.</p>
 </div>
 </div>
 <div class="cell">
@@ -201,13 +223,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>item_names <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">select</span>(df, ListenOther1<span class="sc">:</span>CompetenceNonFrustrated4))</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"R/scales.R"</span>)                    <span class="co"># the 23 scales (Chapter 2)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="calibration-sample-and-rules" class="level2">
-<h2 class="anchored" data-anchor-id="calibration-sample-and-rules">15.1 Calibration sample and rules</h2>
-<p><strong>On which answers does the new structure rest?</strong> On the T0 questionnaires of both groups: everyone answered them before the first training, so no training effect can shape the structure. The later waves serve to check whether the structure repeats.</p>
+<section id="how-each-rule-is-examined" class="level2">
+<h2 class="anchored" data-anchor-id="how-each-rule-is-examined">15.1 How each rule is examined</h2>
+<p><strong>What happens to each rule?</strong> The same five steps, in the same order and in three parts: the rule, its evidence, and what follows. The diagram shows the path; the list below describes each step.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+  subgraph P0["the rule"]
+    direction LR
+    S1["&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;the starting point"]
+    S1 --&gt; S2["&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;the rule"]
+  end
+  subgraph P1["the evidence: January"]
+    direction LR
+    S3["&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;the evidence"]
+    S3 --&gt; S4{{"&lt;b&gt;Step 4&lt;/b&gt;&lt;br&gt;the result"}}
+  end
+  V["&lt;b&gt;Step 5&lt;/b&gt;&lt;br&gt;what follows"]
+  P0 --&gt; P1
+  P1 --&gt; V
+  classDef all fill:#efeff2,stroke:#8a8a8a,color:#1d1d1f
+  classDef verdict fill:#ffffff,stroke:#1d1d1f,color:#1d1d1f
+  class S1,S2,S3,S4 all
+  class V verdict
+  style P0 fill:#fafafa,stroke:#8a8a8a
+  style P1 fill:#fafafa,stroke:#8a8a8a
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>The five steps in detail:</strong></p>
+<p><em>The rule:</em></p>
+<ol type="1">
+<li><strong>The starting point.</strong> The items the rule looks at, in their wording where it matters, and how many items are still in the pool when the rule applies.</li>
+<li><strong>The rule.</strong> When an item leaves the pool, and why. The rules apply in a fixed order: ceiling, negative wording, the women’s attitude block. An item that meets more than one rule leaves under the first.</li>
+</ol>
+<p><em>The evidence:</em></p>
+<ol start="3" type="1">
+<li><strong>The evidence.</strong> The numbers on which the rule decides, item by item, in the T0 questionnaires: for the ceiling, the mean of each item, which must not lie above 9.7 on the scale from 0 to 10; for negative wording, how strongly each item moves while the experimental group trains (a difference-in-differences d from T0 to T1), compared between the positively and the negatively worded items; for the women’s attitude block, how the answers spread over the scale.</li>
+<li><strong>The result.</strong> Which items leave, and how many stay in the pool.</li>
+</ol>
+<p><em>What follows:</em></p>
+<ol start="5" type="1">
+<li><strong>What follows.</strong> What the decision means for the scales, and where the remaining items go next.</li>
+</ol>
+</section>
+<section id="data-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-tools">15.2 Data and tools</h2>
+<p><strong>Which data?</strong> The T0 questionnaires of both groups decide every rule: everyone answered them before the first training, so no training effect can shape the structure. The evidence on negative wording adds T1, the end of the first training window:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(condition)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>t0    <span class="ot">&lt;-</span> <span class="fu">filter</span>(df, Occasion <span class="sc">==</span> <span class="st">"T0"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>t0_t1 <span class="ot">&lt;-</span> <span class="fu">filter</span>(df, Occasion <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"T0"</span>, <span class="st">"T1"</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>t0 <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(condition)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -231,82 +305,181 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The calibration sample holds 358 questionnaires. The rules of this chapter, written as functions of the data:</p>
+<p>The calibration sample holds 358 questionnaires, 178 of the control group and 180 of the experimental group. The later waves serve to check whether the structure repeats (Chapters 16 to 18).</p>
+<p><strong>Which tools?</strong> The analysis of each rule is written out below. The wording of the items and a small function that draws the answers of a block, as in Chapter 6, are defined once here:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Answers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Item wording</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Item pruning (Chapter 15): which items leave the pool before the network</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># analyses, and how strongly each item moves while the experimental group</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># trains. Needs `item_names` (the 102 items, Chapter 2).</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># the 22 negatively worded items, reverse-keyed in Chapter 2</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>negative_items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"NoAlienation1"</span>, <span class="st">"NoAlienation2"</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"NoIsolation1"</span>, <span class="st">"NoIsolation2"</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Flourishing5"</span>, <span class="st">"Flourishing6"</span>, <span class="fu">paste0</span>(<span class="st">"Rogerian"</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">9</span>),</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"ToleranceDiversity1"</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">str_subset</span>(item_names, <span class="st">"NonFrustrated"</span>))</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># items with a T0 mean above the cutoff: hardly any room left to vary</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>items_at_ceiling <span class="ot">&lt;-</span> \(data, <span class="at">cutoff =</span> <span class="fl">9.7</span>) {</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(item_names), \(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"mean"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(mean <span class="sc">&gt;</span> cutoff) <span class="sc">|&gt;</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(item)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># why an item leaves the pool (NA: it stays); the first reason that applies</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>pruning_reasons <span class="ot">&lt;-</span> \(data) {</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  at_ceiling <span class="ot">&lt;-</span> <span class="fu">items_at_ceiling</span>(data)</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">item =</span> item_names) <span class="sc">|&gt;</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">reason =</span> <span class="fu">case_when</span>(</span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>      item <span class="sc">%in%</span> at_ceiling              <span class="sc">~</span> <span class="st">"ceiling"</span>,</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>      item <span class="sc">%in%</span> negative_items          <span class="sc">~</span> <span class="st">"negative wording"</span>,</span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">str_starts</span>(item, <span class="st">"womenAttitude"</span>) <span class="sc">~</span> <span class="st">"women's attitude block"</span>,</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> <span class="cn">NA</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    ))</span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co"># the items that stay, in the order of the questionnaire</span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>structure_pool <span class="ot">&lt;-</span> \(data) {</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pruning_reasons</span>(data) <span class="sc">|&gt;</span></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fu">is.na</span>(reason)) <span class="sc">|&gt;</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(item)</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="co"># change from T0 to T1 in each group, over the SD of both groups at T0;</span></span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="co"># d_did is the difference of the two. Cell means use every questionnaire</span></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="co"># of a group and wave, not only persons who answered at both waves.</span></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>item_did <span class="ot">&lt;-</span> \(data) {</span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"T0"</span>, <span class="st">"T1"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">all_of</span>(item_names), <span class="at">names_to =</span> <span class="st">"item"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>              <span class="at">v =</span> <span class="fu">var</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>              <span class="at">n =</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)),</span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>              <span class="at">.by =</span> <span class="fu">c</span>(item, condition, Occasion)) <span class="sc">|&gt;</span></span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="fu">c</span>(condition, Occasion),</span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>                <span class="at">values_from =</span> <span class="fu">c</span>(m, v, n)) <span class="sc">|&gt;</span></span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">sd_T0 =</span> <span class="fu">sqrt</span>(((n_Experimental_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Experimental_T0 <span class="sc">+</span></span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>                           (n_Control_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Control_T0) <span class="sc">/</span></span>
-<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>                          (n_Experimental_T0 <span class="sc">+</span> n_Control_T0 <span class="sc">-</span> <span class="dv">2</span>)),</span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_E   =</span> (m_Experimental_T1 <span class="sc">-</span> m_Experimental_T0) <span class="sc">/</span> sd_T0,</span>
-<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_C   =</span> (m_Control_T1 <span class="sc">-</span> m_Control_T0) <span class="sc">/</span> sd_T0,</span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_did =</span> d_E <span class="sc">-</span> d_C) <span class="sc">|&gt;</span></span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(item, sd_T0, d_E, d_C, d_did)</span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the share of each answer (0 to 10), one panel per item</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>plot_answers <span class="ot">&lt;-</span> \(items) {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  items <span class="sc">|&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"answer"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(answer)) <span class="sc">|&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count</span>(item, answer) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">share =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n), <span class="at">.by =</span> item) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">item =</span> <span class="fu">factor</span>(item, <span class="at">levels =</span> <span class="fu">names</span>(items))) <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(answer, share)) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#2a78d6"</span>, <span class="at">width =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span> item, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_percent</span>()) <span class="sc">+</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"answer as scored (0 to 10)"</span>, <span class="at">y =</span> <span class="st">"share of the answers"</span>) <span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>          <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The wording of every item (English version of the questionnaire), under</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the names of the analysis file (Chapter 2), and the reverse-keyed items</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>need <span class="ot">&lt;-</span> \(numbers) <span class="fu">paste0</span>(<span class="st">"needSatisfaction"</span>, numbers)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>wording_names <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Alienation1"</span> <span class="ot">=</span> <span class="st">"NoAlienation1"</span>, <span class="st">"Alienation2"</span> <span class="ot">=</span> <span class="st">"NoAlienation2"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Isolation1"</span>  <span class="ot">=</span> <span class="st">"NoIsolation1"</span>,  <span class="st">"Isolation2"</span>  <span class="ot">=</span> <span class="st">"NoIsolation2"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"AutonomySatisfaction"</span>,     <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">13</span>, <span class="dv">19</span>))),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"AutonomyNonFrustrated"</span>,    <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">8</span>, <span class="dv">14</span>, <span class="dv">20</span>))),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"RelatednessSatisfaction"</span>,  <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">15</span>, <span class="dv">21</span>))),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"RelatednessNonFrustrated"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">16</span>, <span class="dv">22</span>))),</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"CompetenceSatisfaction"</span>,   <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">11</span>, <span class="dv">17</span>, <span class="dv">23</span>))),</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="fu">paste0</span>(<span class="st">"CompetenceNonFrustrated"</span>,  <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="fu">need</span>(<span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>)))</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>item_wording <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/item_labels.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(<span class="at">item =</span> <span class="fu">coalesce</span>(wording_names[column_name], column_name),</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">text =</span> <span class="fu">str_squish</span>(label_en))</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co"># answered on the reverse scale and turned around in Chapter 2</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>reverse_keyed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">str_c</span>(<span class="st">"NoAlienation"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>), <span class="fu">str_c</span>(<span class="st">"NoIsolation"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>),</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"Flourishing5"</span>, <span class="st">"Flourishing6"</span>, <span class="fu">str_c</span>(<span class="st">"Rogerian"</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">9</span>),</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"ToleranceDiversity1"</span>,</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">str_c</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Autonomy"</span>, <span class="st">"Relatedness"</span>, <span class="st">"Competence"</span>),</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>                             <span class="at">each =</span> <span class="dv">4</span>), <span class="st">"NonFrustrated"</span>, <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="ceiling" class="level2">
-<h2 class="anchored" data-anchor-id="ceiling">15.2 Ceiling</h2>
-<p><strong>Which items leave no room to move?</strong> An item whose mean at T0 lies above 9.7 on the scale from 0 to 10 has almost no variance to share with other items and no room to improve. The highest means at T0:</p>
+<section id="the-three-rules" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-rules">15.3 The three rules</h2>
+<p><strong>Which rules, in which order?</strong> First the ceiling, which concerns single items; then negative wording, which concerns the direction in which an item is asked; last the women’s attitude block, which concerns a whole scale.</p>
+<section id="ceiling" class="level3">
+<h3 class="anchored" data-anchor-id="ceiling">Ceiling</h3>
+<p><strong>Its path through the steps.</strong> One row per step below; the rule decides on the January questionnaires <span class="data-badge data-all">January</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">When is an item at the ceiling?</td>
+<td style="text-align: left;">when its mean at T0 lies above 9.7</td>
+<td style="text-align: left;">evidence</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">How high do the items lie at T0?</td>
+<td style="text-align: left;">the eight highest all belong to Women Attitude</td>
+<td style="text-align: left;">result</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Which items cross the line?</td>
+<td style="text-align: left;">two items of Women Attitude, left out of its score already</td>
+<td style="text-align: left;">what follows</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Where next?</td>
+<td style="text-align: left;">the other items go on to the second rule</td>
+<td style="text-align: left;">negative wording</td>
+</tr>
+</tbody>
+</table>
+<section id="the-rule-steps-1-and-2" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-rule-steps-1-and-2">The rule · Steps 1 and 2</h4>
+<section id="step-1-the-starting-point-january" class="level5">
+<h5 class="anchored" data-anchor-id="step-1-the-starting-point-january">Step 1 · The starting point <span class="data-badge data-all">January</span></h5>
+<p><strong>Which items does the rule look at?</strong> All items of the 23 scales, in the T0 questionnaires:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(item_names), \(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"mean_T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_T0)) <span class="sc">|&gt;</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">6</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mean_T0 =</span> <span class="fu">round</span>(mean_T0, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>scales <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">items =</span> <span class="fu">lengths</span>(scale_items[scale])) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">scales =</span> <span class="fu">n</span>(), <span class="at">items =</span> <span class="fu">sum</span>(items), <span class="at">.by =</span> block)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">block</th>
+<th style="text-align: right;">scales</th>
+<th style="text-align: right;">items</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">H1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">H2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">H3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">42</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The rule starts from the full pool: 102 items in 23 scales, answered in 358 questionnaires.</p>
+<p><span class="next">Next →</span> Step 2, the rule: When is an item at the ceiling?</p>
+</section>
+<section id="step-2-the-rule-january" class="level5">
+<h5 class="anchored" data-anchor-id="step-2-the-rule-january">Step 2 · The rule <span class="data-badge data-all">January</span></h5>
+<p><strong>When is an item at the ceiling?</strong> When its mean at T0 lies above 9.7 on the scale from 0 to 10:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ceil_cutoff <span class="ot">&lt;-</span> <span class="fl">9.7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Such an item has almost no variance to share with other items, so a network can hardly place it, and it has no room left to improve with the training.</p>
+<p><span class="next">Next →</span> Step 3, the evidence: How high do the items lie at T0?</p>
+</section>
+</section>
+<section id="the-evidence-steps-3-and-4" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-evidence-steps-3-and-4">The evidence · Steps 3 and 4</h4>
+<section id="step-3-the-evidence-january" class="level5">
+<h5 class="anchored" data-anchor-id="step-3-the-evidence-january">Step 3 · The evidence <span class="data-badge data-all">January</span></h5>
+<p><strong>How high do the items lie at T0?</strong> The mean of every item, highest first:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>ceil_means <span class="ot">&lt;-</span> t0 <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(item_names), \(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"mean_T0"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="fu">str_remove</span>(item, <span class="st">"[0-9]+$"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(mean_T0))</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>ceil_means <span class="sc">|&gt;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">12</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mean_T0 =</span> <span class="fu">round</span>(mean_T0, <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -314,62 +487,447 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="header">
 <th style="text-align: left;">item</th>
 <th style="text-align: right;">mean_T0</th>
+<th style="text-align: left;">scale</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">womenAttitude6</td>
 <td style="text-align: right;">9.87</td>
+<td style="text-align: left;">womenAttitude</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">womenAttitude7</td>
 <td style="text-align: right;">9.84</td>
+<td style="text-align: left;">womenAttitude</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">womenAttitude9</td>
 <td style="text-align: right;">9.66</td>
+<td style="text-align: left;">womenAttitude</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">womenAttitude5</td>
 <td style="text-align: right;">9.66</td>
+<td style="text-align: left;">womenAttitude</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">womenAttitude8</td>
 <td style="text-align: right;">9.62</td>
+<td style="text-align: left;">womenAttitude</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">womenAttitude2</td>
 <td style="text-align: right;">9.56</td>
+<td style="text-align: left;">womenAttitude</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude4</td>
+<td style="text-align: right;">9.44</td>
+<td style="text-align: left;">womenAttitude</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude3</td>
+<td style="text-align: right;">9.36</td>
+<td style="text-align: left;">womenAttitude</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RelatednessSatisfaction2</td>
+<td style="text-align: right;">9.30</td>
+<td style="text-align: left;">RelatednessSatisfaction</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ToleranceDiversity1</td>
+<td style="text-align: right;">9.28</td>
+<td style="text-align: left;">ToleranceDiversity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RelatednessSatisfaction3</td>
+<td style="text-align: right;">9.28</td>
+<td style="text-align: left;">RelatednessSatisfaction</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rogerian1</td>
+<td style="text-align: right;">8.94</td>
+<td style="text-align: left;">Rogerian</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>at_ceiling <span class="ot">&lt;-</span> <span class="fu">items_at_ceiling</span>(df)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>at_ceiling</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><strong>All 102 means at once,</strong> by hypothesis block; orange: the items of Women Attitude, dashed: the cutoff.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ceil_means <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(<span class="fu">select</span>(scales, scale, block), <span class="at">by =</span> <span class="st">"scale"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">group =</span> <span class="fu">if_else</span>(scale <span class="sc">==</span> <span class="st">"womenAttitude"</span>, <span class="st">"Women Attitude"</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"other scales"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> mean_T0, <span class="at">y =</span> <span class="fu">fct_rev</span>(block), <span class="at">colour =</span> group)) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> ceil_cutoff, <span class="at">colour =</span> <span class="st">"grey60"</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">height =</span> .<span class="dv">15</span>, <span class="at">seed =</span> <span class="dv">1</span>),</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Women Attitude</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#eb6834"</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>                                 <span class="st">`</span><span class="at">other scales</span><span class="st">`</span>   <span class="ot">=</span> <span class="st">"#2a78d6"</span>)) <span class="sc">+</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>), <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">2</span>)) <span class="sc">+</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"mean at T0 (0 to 10)"</span>, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">colour =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>, <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="15_item_pruning_files/figure-html/ch15-ceil-figure-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The means run from 3.18 to 9.87, half of them above 8.06. The eight highest all belong to Women Attitude.</p>
+<p><span class="next">Next →</span> Step 4, the result: Which items cross the line?</p>
+</section>
+<section id="step-4-the-result-january" class="level5">
+<h5 class="anchored" data-anchor-id="step-4-the-result-january">Step 4 · The result <span class="data-badge data-all">January</span></h5>
+<p><strong>Which items cross the line?</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ceil_items <span class="ot">&lt;-</span> ceil_means <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(mean_T0 <span class="sc">&gt;</span> ceil_cutoff) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(item)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>ceil_items</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "womenAttitude6" "womenAttitude7"</code></pre>
 </div>
 </div>
-<p>Two items cross the line, womenAttitude6 and womenAttitude7; they are the two items Chapter 2 already leaves out of the Women Attitude score.</p>
+<p>Two items cross the line, womenAttitude6 and womenAttitude7; the other 100 items stay in the pool.</p>
+<p><span class="next">Next →</span> Step 5, what follows: Where do the two items go?</p>
 </section>
-<section id="negative-wording" class="level2">
-<h2 class="anchored" data-anchor-id="negative-wording">15.3 Negative wording</h2>
-<p><strong>Do the negatively worded items respond to the training?</strong> Negatively worded items tend to form communities of their own in a network, defined by the direction of the wording rather than by its content, and they invite more answering errors. If they also carried the training effect, dropping them would cost signal. The test is the first training window: how much does each item move from T0 to T1 in the experimental group, beyond the change in the control group?</p>
-<p>The measure here is a difference-in-differences d per item: the change of each group’s mean from T0 to T1, divided by the standard deviation at T0 pooled over both groups, experimental minus control. Unlike the Δd of Chapter 9, the means use every questionnaire of a group and wave, not only persons who answered at both waves. The negatively worded items enter reverse-keyed (Chapter 2), so a positive d always means a move toward the desired pole.</p>
+</section>
+<section id="what-follows-step-5" class="level4 group group-verdict">
+<h4 class="group group-verdict anchored" data-anchor-id="what-follows-step-5">What follows · Step 5</h4>
+<section id="step-5-what-follows" class="level5">
+<h5 class="anchored" data-anchor-id="step-5-what-follows">Step 5 · What follows</h5>
+<p><strong>Where do the two items go?</strong> They are the two items that Chapter 2 already leaves out of the Women Attitude score, so the preregistered analyses lose nothing by this rule. The other seven items of the block stay for now; the third rule takes up the block as a whole. The 100 items go on to the second rule.</p>
+</section>
+</section>
+</section>
+<section id="negative-wording" class="level3">
+<h3 class="anchored" data-anchor-id="negative-wording">Negative wording</h3>
+<p><strong>Its path through the steps.</strong> One row per step below; the rule starts from the January questionnaires <span class="data-badge data-all">January</span>, its evidence compares both groups from T0 to T1 <span class="data-badge data-both">both groups</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">When does an item leave?</td>
+<td style="text-align: left;">every negatively worded item leaves</td>
+<td style="text-align: left;">evidence</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">How strongly does an item move with the training?</td>
+<td style="text-align: left;">a difference-in-differences d per item, positive against negative wording</td>
+<td style="text-align: left;">result</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Which scales lose items?</td>
+<td style="text-align: left;">five scales of negatively worded items only are emptied</td>
+<td style="text-align: left;">what follows</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Where next?</td>
+<td style="text-align: left;">three scales keep their positive items; the rest go on to the third rule</td>
+<td style="text-align: left;">the women’s attitude block</td>
+</tr>
+</tbody>
+</table>
+<section id="the-rule-steps-1-and-2-1" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-rule-steps-1-and-2-1">The rule · Steps 1 and 2</h4>
+<section id="step-1-the-starting-point-january-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-1-the-starting-point-january-1">Step 1 · The starting point <span class="data-badge data-all">January</span></h5>
+<p><strong>Which items does the rule look at?</strong> The items that were asked the other way round, so that agreeing with them means less of the construct; Chapter 2 turns them around (reverse-keyed):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>item_effects <span class="ot">&lt;-</span> <span class="fu">item_did</span>(df) <span class="sc">|&gt;</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">wording =</span> <span class="fu">if_else</span>(item <span class="sc">%in%</span> negative_items, <span class="st">"negative"</span>,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                           <span class="st">"positive"</span>))</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>item_effects <span class="sc">|&gt;</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">items      =</span> <span class="fu">n</span>(),</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d     =</span> <span class="fu">mean</span>(d_did),</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_d   =</span> <span class="fu">median</span>(d_did),</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_abs_d =</span> <span class="fu">mean</span>(<span class="fu">abs</span>(d_did)),</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d_E   =</span> <span class="fu">mean</span>(d_E),</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> wording) <span class="sc">|&gt;</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>neg_items <span class="ot">&lt;-</span> reverse_keyed</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>item_wording <span class="sc">|&gt;</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">%in%</span> neg_items) <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">scale =</span> <span class="fu">str_remove</span>(item, <span class="st">"[0-9]+$"</span>), <span class="at">.after =</span> item)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">item</th>
+<th style="text-align: left;">scale</th>
+<th style="text-align: left;">text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NoAlienation1</td>
+<td style="text-align: left;">NoAlienation</td>
+<td style="text-align: left;">Nowadays things are so confusing that you sometimes do not know where you stand.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NoAlienation2</td>
+<td style="text-align: left;">NoAlienation</td>
+<td style="text-align: left;">Nowadays things are so complex that you sometimes do not know what is going on.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Flourishing5</td>
+<td style="text-align: left;">Flourishing</td>
+<td style="text-align: left;">Are you depressed? (0 = Not at all depressed, 10 = Very depressed)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Flourishing6</td>
+<td style="text-align: left;">Flourishing</td>
+<td style="text-align: left;">Do you have anxiety that keeps you from doing the things in life that you need to do? (0 = Never, 10 = Always)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NoIsolation1</td>
+<td style="text-align: left;">NoIsolation</td>
+<td style="text-align: left;">Finding real friends is becoming more and more difficult nowadays.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NoIsolation2</td>
+<td style="text-align: left;">NoIsolation</td>
+<td style="text-align: left;">Relationships are getting more and more unstable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rogerian7</td>
+<td style="text-align: left;">Rogerian</td>
+<td style="text-align: left;">interferes with productivity.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rogerian8</td>
+<td style="text-align: left;">Rogerian</td>
+<td style="text-align: left;">makes other people feel uncomfortable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rogerian9</td>
+<td style="text-align: left;">Rogerian</td>
+<td style="text-align: left;">sometimes derails the team’s work process.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ToleranceDiversity1</td>
+<td style="text-align: left;">ToleranceDiversity</td>
+<td style="text-align: left;">Roma/Sinti women threaten the values of Serbia.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RelatednessNonFrustrated2</td>
+<td style="text-align: left;">RelatednessNonFrustrated</td>
+<td style="text-align: left;">I feel that people who are important to me are cold and distant towards me</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CompetenceNonFrustrated2</td>
+<td style="text-align: left;">CompetenceNonFrustrated</td>
+<td style="text-align: left;">I feel disappointed with many of my performances.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AutonomyNonFrustrated3</td>
+<td style="text-align: left;">AutonomyNonFrustrated</td>
+<td style="text-align: left;">I feel pressured to do too many things</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RelatednessNonFrustrated3</td>
+<td style="text-align: left;">RelatednessNonFrustrated</td>
+<td style="text-align: left;">I have the impression that people I spend time with dislike me.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CompetenceNonFrustrated3</td>
+<td style="text-align: left;">CompetenceNonFrustrated</td>
+<td style="text-align: left;">I feel insecure about my abilities</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AutonomyNonFrustrated1</td>
+<td style="text-align: left;">AutonomyNonFrustrated</td>
+<td style="text-align: left;">Most of the things I do feel like “I have to”.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AutonomyNonFrustrated4</td>
+<td style="text-align: left;">AutonomyNonFrustrated</td>
+<td style="text-align: left;">My daily activities feel like a chain of obligations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RelatednessNonFrustrated4</td>
+<td style="text-align: left;">RelatednessNonFrustrated</td>
+<td style="text-align: left;">I feel relationships I have are just superficial</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CompetenceNonFrustrated4</td>
+<td style="text-align: left;">CompetenceNonFrustrated</td>
+<td style="text-align: left;">I feel like a failure because of the mistakes I make.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RelatednessNonFrustrated1</td>
+<td style="text-align: left;">RelatednessNonFrustrated</td>
+<td style="text-align: left;">I feel excluded from the group I want to belong to.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CompetenceNonFrustrated1</td>
+<td style="text-align: left;">CompetenceNonFrustrated</td>
+<td style="text-align: left;">I have serious doubts about whether I can do things well.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AutonomyNonFrustrated2</td>
+<td style="text-align: left;">AutonomyNonFrustrated</td>
+<td style="text-align: left;">I feel forced to do many things I wouldn’t choose to do.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The rule looks at 22 items of 8 scales, all of them still in the pool after the first rule.</p>
+<p><span class="next">Next →</span> Step 2, the rule: When does an item leave?</p>
+</section>
+<section id="step-2-the-rule-january-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-2-the-rule-january-1">Step 2 · The rule <span class="data-badge data-all">January</span></h5>
+<p><strong>When does an item leave?</strong> Every negatively worded item leaves. In a network, negatively worded items tend to form communities of their own, defined by the direction of the wording rather than by its content, and they invite more answering errors. The factor models of Chapter 6 show the pattern: the reverse-keyed items 7 to 9 of Rogerian Schema hardly correlate with items 1 to 6. If these items also carried the training effect, however, dropping them would cost signal. Step 3 therefore asks how much each item moves while the experimental group trains.</p>
+<p><span class="next">Next →</span> Step 3, the evidence: How is the movement of an item measured?</p>
+</section>
+</section>
+<section id="the-evidence-steps-3-and-4-1" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-evidence-steps-3-and-4-1">The evidence · Steps 3 and 4</h4>
+<section id="step-3-the-evidence-both-groups" class="level5">
+<h5 class="anchored" data-anchor-id="step-3-the-evidence-both-groups">Step 3 · The evidence <span class="data-badge data-both">both groups</span></h5>
+<p><strong>How is the movement of an item measured?</strong> By a difference-in-differences d per item: the change of each group’s mean from T0 to T1, divided by the standard deviation at T0 pooled over both groups, experimental minus control. Unlike the Δd of Chapter 9, the means use every questionnaire of a group and wave, not only persons who answered at both waves. The negatively worded items enter reverse-keyed, so a positive d always means a move toward the desired pole. First the mean, the variance and the number of answers per item, group and wave, here for one item:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mean, variance and number of answers per item, group and wave</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>neg_cells <span class="ot">&lt;-</span> t0_t1 <span class="sc">|&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">all_of</span>(item_names), <span class="at">names_to =</span> <span class="st">"item"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">v =</span> <span class="fu">var</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">n =</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)),</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> <span class="fu">c</span>(item, condition, Occasion))</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>neg_cells <span class="sc">|&gt;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">==</span> <span class="st">"Rogerian4"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(m, v), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">item</th>
+<th style="text-align: left;">condition</th>
+<th style="text-align: left;">Occasion</th>
+<th style="text-align: right;">m</th>
+<th style="text-align: right;">v</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Rogerian4</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">T0</td>
+<td style="text-align: right;">8.818</td>
+<td style="text-align: right;">2.424</td>
+<td style="text-align: right;">176</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rogerian4</td>
+<td style="text-align: left;">Control</td>
+<td style="text-align: left;">T1</td>
+<td style="text-align: right;">8.869</td>
+<td style="text-align: right;">2.101</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rogerian4</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">T0</td>
+<td style="text-align: right;">8.593</td>
+<td style="text-align: right;">2.674</td>
+<td style="text-align: right;">177</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rogerian4</td>
+<td style="text-align: left;">Experimental</td>
+<td style="text-align: left;">T1</td>
+<td style="text-align: right;">9.361</td>
+<td style="text-align: right;">0.973</td>
+<td style="text-align: right;">155</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Then the d of each group and their difference:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the change of each group from T0 to T1, over the SD of both groups at</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># T0; d_did is experimental minus control</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="ot">&lt;-</span> neg_cells <span class="sc">|&gt;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="fu">c</span>(condition, Occasion),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_from =</span> <span class="fu">c</span>(m, v, n)) <span class="sc">|&gt;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sd_T0 =</span> <span class="fu">sqrt</span>(((n_Experimental_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Experimental_T0 <span class="sc">+</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                         (n_Control_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Control_T0) <span class="sc">/</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>                        (n_Experimental_T0 <span class="sc">+</span> n_Control_T0 <span class="sc">-</span> <span class="dv">2</span>)),</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">d_E   =</span> (m_Experimental_T1 <span class="sc">-</span> m_Experimental_T0) <span class="sc">/</span> sd_T0,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">d_C   =</span> (m_Control_T1 <span class="sc">-</span> m_Control_T0) <span class="sc">/</span> sd_T0,</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">d_did =</span> d_E <span class="sc">-</span> d_C) <span class="sc">|&gt;</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(item, sd_T0, d_E, d_C, d_did) <span class="sc">|&gt;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">wording =</span> <span class="fu">if_else</span>(item <span class="sc">%in%</span> neg_items, <span class="st">"negative"</span>, <span class="st">"positive"</span>))</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="sc">|&gt;</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">==</span> <span class="st">"Rogerian4"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">item</th>
+<th style="text-align: right;">sd_T0</th>
+<th style="text-align: right;">d_E</th>
+<th style="text-align: right;">d_C</th>
+<th style="text-align: right;">d_did</th>
+<th style="text-align: left;">wording</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Rogerian4</td>
+<td style="text-align: right;">1.597</td>
+<td style="text-align: right;">0.481</td>
+<td style="text-align: right;">0.032</td>
+<td style="text-align: right;">0.449</td>
+<td style="text-align: left;">positive</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>The experimental group rises on Rogerian4 from 8.59 to 9.36, the control group from 8.82 to 8.87. Over the pooled standard deviation of 1.60, that is d = 0.48 against d = 0.03, a difference of d = 0.45.</p>
+<p><strong>Do the negatively worded items move with the training?</strong> The d of all 102 items, averaged by wording:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">items      =</span> <span class="fu">n</span>(),</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d     =</span> <span class="fu">mean</span>(d_did),</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">median_d   =</span> <span class="fu">median</span>(d_did),</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_abs_d =</span> <span class="fu">mean</span>(<span class="fu">abs</span>(d_did)),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d_E   =</span> <span class="fu">mean</span>(d_E),</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> wording) <span class="sc">|&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">3</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -406,16 +964,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Averaged over items, the positively worded items move by d = 0.167 while the experimental group trains; the negatively worded items move by d = -0.057, that is, slightly against the training, although they were turned so as to gain from it.</p>
-<p><strong>Same content, opposite wording.</strong> The cleanest contrast lies within the constructs that contain both kinds of items: the Rogerian schema, flourishing, tolerance of diversity, and the three basic needs, where each need has satisfaction items and non-frustration items.</p>
+<p><strong>Same content, opposite wording?</strong> The cleanest contrast lies within the constructs that contain both kinds of items: Rogerian Schema, Flourishing, Tolerance Diversity, and the three basic needs, where each need has satisfaction items and non-frustration items.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>item_effects <span class="sc">|&gt;</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">construct =</span> <span class="fu">str_remove</span>(item, <span class="st">"[0-9]+$"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_remove</span>(<span class="st">"Satisfaction|NonFrustrated"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">n_distinct</span>(wording) <span class="sc">==</span> <span class="dv">2</span>, <span class="at">.by =</span> construct) <span class="sc">|&gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">items  =</span> <span class="fu">n</span>(),</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d =</span> <span class="fu">round</span>(<span class="fu">mean</span>(d_did), <span class="dv">3</span>),</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> <span class="fu">c</span>(construct, wording)) <span class="sc">|&gt;</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(construct, <span class="fu">desc</span>(wording))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">construct =</span> <span class="fu">str_remove</span>(item, <span class="st">"[0-9]+$"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_remove</span>(<span class="st">"Satisfaction|NonFrustrated"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">n_distinct</span>(wording) <span class="sc">==</span> <span class="dv">2</span>, <span class="at">.by =</span> construct) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">items  =</span> <span class="fu">n</span>(),</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">mean_d =</span> <span class="fu">round</span>(<span class="fu">mean</span>(d_did), <span class="dv">3</span>),</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> <span class="fu">c</span>(construct, wording)) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(construct, <span class="fu">desc</span>(wording))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -506,35 +1064,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>In each of the 6 constructs the positively worded items move more than the negatively worded ones.</p>
-<p><strong>Every item:</strong></p>
+<p><strong>Every item,</strong> by wording:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>item_effects <span class="sc">|&gt;</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> d_did, <span class="at">y =</span> wording, <span class="at">colour =</span> wording)) <span class="sc">+</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">colour =</span> <span class="st">"grey60"</span>) <span class="sc">+</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">height =</span> .<span class="dv">15</span>, <span class="at">seed =</span> <span class="dv">1</span>),</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">shape =</span> <span class="dv">124</span>, <span class="at">size =</span> <span class="dv">12</span>,</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">colour =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">positive =</span> <span class="st">"#2a78d6"</span>,</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">negative =</span> <span class="st">"#eb6834"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Difference-in-differences d, T0 to T1 (bar: mean)"</span>,</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Wording"</span>) <span class="sc">+</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> d_did, <span class="at">y =</span> wording, <span class="at">colour =</span> wording)) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>, <span class="at">colour =</span> <span class="st">"grey60"</span>) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">height =</span> .<span class="dv">15</span>, <span class="at">seed =</span> <span class="dv">1</span>),</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">shape =</span> <span class="dv">124</span>, <span class="at">size =</span> <span class="dv">12</span>,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">colour =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">positive =</span> <span class="st">"#2a78d6"</span>,</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">negative =</span> <span class="st">"#eb6834"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Difference-in-differences d, T0 to T1 (bar: mean)"</span>,</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Wording"</span>) <span class="sc">+</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">11</span>) <span class="sc">+</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="15_item_pruning_files/figure-html/ch15-did-figure-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="15_item_pruning_files/figure-html/ch15-neg-figure-1.png" class="img-fluid figure-img" width="768"></p>
 </figure>
 </div>
 </div>
 </div>
+<p><strong>The negatively worded items one by one:</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>item_effects <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(wording <span class="sc">==</span> <span class="st">"negative"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(item, <span class="at">d_E =</span> <span class="fu">round</span>(d_E, <span class="dv">3</span>), <span class="at">d_C =</span> <span class="fu">round</span>(d_C, <span class="dv">3</span>),</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">d_did =</span> <span class="fu">round</span>(d_did, <span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(d_did)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>neg_effects <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(wording <span class="sc">==</span> <span class="st">"negative"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(item, <span class="at">d_E =</span> <span class="fu">round</span>(d_E, <span class="dv">3</span>), <span class="at">d_C =</span> <span class="fu">round</span>(d_C, <span class="dv">3</span>),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">d_did =</span> <span class="fu">round</span>(d_did, <span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(d_did)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -684,22 +1243,253 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>None of the 22 negatively worded items reaches d = .20; the largest is Rogerian7 (d = 0.185). Dropping them removes items that carry little of the training effect.</p>
+<p>None of the 22 negatively worded items reaches d = 0.20; the largest is Rogerian7 (d = 0.185). Dropping them removes items that carry little of the training effect.</p>
+<p><span class="next">Next →</span> Step 4, the result: Which scales lose items?</p>
 </section>
-<section id="the-womens-attitude-block" class="level2">
-<h2 class="anchored" data-anchor-id="the-womens-attitude-block">15.4 The women’s attitude block</h2>
-<p><strong>Why does the whole block go?</strong> Beyond the two items at the ceiling, the other seven items of the block sit close to it as well, so the block as a whole gives a network little variance to work with. It measures an H2 construct (attitudes toward an out-group) and none of the H1 outcomes; H2 stays measured by the Rogerian schema, Paradox Mindset, Intellectual Humility and Tolerance of Diversity.</p>
+<section id="step-4-the-result-january-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-4-the-result-january-1">Step 4 · The result <span class="data-badge data-all">January</span></h5>
+<p><strong>Which scales lose items?</strong> Items per scale before the rule, the negatively worded among them, and what stays:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">num_range</span>(<span class="st">"womenAttitude"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"answer"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_T0      =</span> <span class="fu">mean</span>(answer, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_T0        =</span> <span class="fu">sd</span>(answer, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_10   =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(answer <span class="sc">==</span> <span class="dv">10</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_9_10 =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(answer <span class="sc">&gt;=</span> <span class="dv">9</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> item) <span class="sc">|&gt;</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>neg_scale_loss <span class="ot">&lt;-</span> scales <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">before   =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>                            \(items) <span class="fu">sum</span>(items <span class="sc">%in%</span> ceil_pool)),</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">negative =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                            \(items) <span class="fu">sum</span>(items <span class="sc">%in%</span> neg_items)),</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">after    =</span> before <span class="sc">-</span> negative) <span class="sc">|&gt;</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(negative <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(label, block, before, negative, after)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>neg_scale_loss</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">label</th>
+<th style="text-align: left;">block</th>
+<th style="text-align: right;">before</th>
+<th style="text-align: right;">negative</th>
+<th style="text-align: right;">after</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No Alienation</td>
+<td style="text-align: left;">H1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No Isolation</td>
+<td style="text-align: left;">H1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rogerian Schema</td>
+<td style="text-align: left;">H2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tolerance Diversity</td>
+<td style="text-align: left;">H2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Flourishing</td>
+<td style="text-align: left;">H3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Autonomy Non-Frustrated</td>
+<td style="text-align: left;">H3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Relatedness Non-Frustrated</td>
+<td style="text-align: left;">H3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Competence Non-Frustrated</td>
+<td style="text-align: left;">H3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>neg_pool <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(ceil_pool, neg_items)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The rule takes out 22 items and leaves 78. It empties the 5 scales that consist of negatively worded items only: No Alienation, No Isolation, Autonomy Non-Frustrated, Relatedness Non-Frustrated, and Competence Non-Frustrated.</p>
+<p><span class="next">Next →</span> Step 5, what follows: What does the decision mean for the scales?</p>
+</section>
+</section>
+<section id="what-follows-step-5-1" class="level4 group group-verdict">
+<h4 class="group group-verdict anchored" data-anchor-id="what-follows-step-5-1">What follows · Step 5</h4>
+<section id="step-5-what-follows-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-5-what-follows-1">Step 5 · What follows</h5>
+<p><strong>What does the decision mean for the scales?</strong> Three scales keep their positively worded items: Rogerian Schema items 1 to 6, Flourishing items 1 to 4 and 7, Tolerance Diversity items 2 to 5. The preregistered scores of Chapter 2 keep all their items; only the post hoc structure of Chapters 16 to 18 does without the negatively worded ones. The 78 items go on to the third rule.</p>
+</section>
+</section>
+</section>
+<section id="the-womens-attitude-block" class="level3">
+<h3 class="anchored" data-anchor-id="the-womens-attitude-block">The women’s attitude block</h3>
+<p><strong>Its path through the steps.</strong> One row per step below; the rule decides on the January questionnaires <span class="data-badge data-all">January</span>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 33%">
+<col style="width: 36%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Question</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Next</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Why does the whole block go?</td>
+<td style="text-align: left;">it sits close to the ceiling and leaves a network little variance</td>
+<td style="text-align: left;">evidence</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">How close to the ceiling are the answers?</td>
+<td style="text-align: left;">even the items below the line average high</td>
+<td style="text-align: left;">result</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Which items leave?</td>
+<td style="text-align: left;">the seven still in the pool</td>
+<td style="text-align: left;">what follows</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Where next?</td>
+<td style="text-align: left;">the remaining items go to Chapter 16</td>
+<td style="text-align: left;">Chapter 16</td>
+</tr>
+</tbody>
+</table>
+<section id="the-rule-steps-1-and-2-2" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-rule-steps-1-and-2-2">The rule · Steps 1 and 2</h4>
+<section id="step-1-the-starting-point-january-2" class="level5">
+<h5 class="anchored" data-anchor-id="step-1-the-starting-point-january-2">Step 1 · The starting point <span class="data-badge data-all">January</span></h5>
+<p><strong>Which items does the rule look at?</strong> The nine items of Women Attitude, two of which the first rule has already taken out:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>item_wording <span class="sc">|&gt;</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(item <span class="sc">%in%</span> scale_items<span class="sc">$</span>womenAttitude) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">in_pool =</span> item <span class="sc">%in%</span> neg_pool)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 79%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">item</th>
+<th style="text-align: left;">text</th>
+<th style="text-align: left;">in_pool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude1</td>
+<td style="text-align: left;">Every woman should be free to choose whether to complete secondary school.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude2</td>
+<td style="text-align: left;">Every woman should be free to choose whether to work for pay.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude3</td>
+<td style="text-align: left;">Every woman should be free to choose to prioritize her work for pay over domestic duties.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude4</td>
+<td style="text-align: left;">Every woman should be free to choose what to do with any money that she earns.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude5</td>
+<td style="text-align: left;">Every woman should be free to choose to purchase land, a house, or other valuable goods.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude6</td>
+<td style="text-align: left;">Every woman should be free to choose when to get married.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude7</td>
+<td style="text-align: left;">Every woman should be free to choose to divorce or end her marriage.</td>
+<td style="text-align: left;">FALSE</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">womenAttitude8</td>
+<td style="text-align: left;">Every woman should be free to choose whether and when to have children.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">womenAttitude9</td>
+<td style="text-align: left;">Every woman should be free to choose not to have any more children.</td>
+<td style="text-align: left;">TRUE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Of the nine items, 7 are still in the pool.</p>
+<p><span class="next">Next →</span> Step 2, the rule: Why does the whole block go?</p>
+</section>
+<section id="step-2-the-rule-january-2" class="level5">
+<h5 class="anchored" data-anchor-id="step-2-the-rule-january-2">Step 2 · The rule <span class="data-badge data-all">January</span></h5>
+<p><strong>Why does the whole block go?</strong> Beyond the two items at the ceiling, the other seven items of the block sit close to it as well (Step 3), so the block as a whole gives a network little variance to work with. It measures an H2 construct (attitudes toward an out-group) and none of the H1 outcomes; H2 stays measured by Rogerian Schema, Paradox Mindset, Intellectual Humility and Tolerance Diversity.</p>
+<p><span class="next">Next →</span> Step 3, the evidence: How close to the ceiling are the answers?</p>
+</section>
+</section>
+<section id="the-evidence-steps-3-and-4-2" class="level4 group group-all">
+<h4 class="group group-all anchored" data-anchor-id="the-evidence-steps-3-and-4-2">The evidence · Steps 3 and 4</h4>
+<section id="step-3-the-evidence-january-1" class="level5">
+<h5 class="anchored" data-anchor-id="step-3-the-evidence-january-1">Step 3 · The evidence <span class="data-badge data-all">January</span></h5>
+<p><strong>How close to the ceiling are the answers?</strong> Mean, spread and the share of the highest answers, for all nine items at T0:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>t0 <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">num_range</span>(<span class="st">"womenAttitude"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"answer"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_T0      =</span> <span class="fu">mean</span>(answer, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_T0        =</span> <span class="fu">sd</span>(answer, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_10   =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(answer <span class="sc">==</span> <span class="dv">10</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">percent_9_10 =</span> <span class="dv">100</span> <span class="sc">*</span> <span class="fu">mean</span>(answer <span class="sc">&gt;=</span> <span class="dv">9</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">.by =</span> item) <span class="sc">|&gt;</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">where</span>(is.double), \(x) <span class="fu">round</span>(x, <span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
@@ -781,96 +1571,160 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The nine items average 9.51 at T0; between 68 % and 92 % of the answers are a 10.</p>
-</section>
-<section id="from-102-to-71-items" class="level2">
-<h2 class="anchored" data-anchor-id="from-102-to-71-items">15.5 From 102 to 71 items</h2>
-<p><strong>What remains?</strong> Each item that leaves the pool, with the first reason that applies:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>reasons <span class="ot">&lt;-</span> <span class="fu">pruning_reasons</span>(df)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>reasons <span class="sc">|&gt;</span> <span class="fu">count</span>(reason)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>t0 <span class="sc">|&gt;</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">num_range</span>(<span class="st">"womenAttitude"</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_answers</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div class="kable-table">
-<table class="caption-top table table-sm table-striped small">
-<thead>
-<tr class="header">
-<th style="text-align: left;">reason</th>
-<th style="text-align: right;">n</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">ceiling</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">negative wording</td>
-<td style="text-align: right;">22</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">women’s attitude block</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NA</td>
-<td style="text-align: right;">71</td>
-</tr>
-</tbody>
-</table>
+<div>
+<figure class="figure">
+<p><img src="15_item_pruning_files/figure-html/ch15-wa-answers-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>reasons <span class="sc">|&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(reason)) <span class="sc">|&gt;</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">items =</span> <span class="fu">str_flatten_comma</span>(item), <span class="at">.by =</span> reason)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The nine items average 9.51 at T0; between 68 % and 92 % of the answers are a 10. Even the seven items below the line average between 8.56 (item 1) and 9.66.</p>
+<p><span class="next">Next →</span> Step 4, the result: Which items leave?</p>
+</section>
+<section id="step-4-the-result-january-2" class="level5">
+<h5 class="anchored" data-anchor-id="step-4-the-result-january-2">Step 4 · The result <span class="data-badge data-all">January</span></h5>
+<p><strong>Which items leave?</strong> The seven that are still in the pool:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>wa_items <span class="ot">&lt;-</span> <span class="fu">intersect</span>(scale_items<span class="sc">$</span>womenAttitude, neg_pool)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>wa_items</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "womenAttitude1" "womenAttitude2" "womenAttitude3" "womenAttitude4"
+[5] "womenAttitude5" "womenAttitude8" "womenAttitude9"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>wa_pool <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(neg_pool, wa_items)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The rule takes out 7 items and leaves 71.</p>
+<p><span class="next">Next →</span> Step 5, what follows: Where does the block go?</p>
+</section>
+</section>
+<section id="what-follows-step-5-2" class="level4 group group-verdict">
+<h4 class="group group-verdict anchored" data-anchor-id="what-follows-step-5-2">What follows · Step 5</h4>
+<section id="step-5-what-follows-2" class="level5">
+<h5 class="anchored" data-anchor-id="step-5-what-follows-2">Step 5 · What follows</h5>
+<p><strong>Where does the block go?</strong> The Women Attitude score of Chapter 2, without items 6 and 7, stays in the preregistered analyses of H2; the post hoc structure does without the block. The 71 items that remain go to Chapter 16.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="all-rules-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="all-rules-at-a-glance">15.4 All rules at a glance</h2>
+<p><strong>What does each rule take out, and what remains of each scale?</strong> Each item with the first rule that applies to it:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>reasons <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">item =</span> item_names) <span class="sc">|&gt;</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">reason =</span> <span class="fu">case_when</span>(</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    item <span class="sc">%in%</span> ceil_items <span class="sc">~</span> <span class="st">"ceiling"</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    item <span class="sc">%in%</span> neg_items  <span class="sc">~</span> <span class="st">"negative wording"</span>,</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    item <span class="sc">%in%</span> wa_items   <span class="sc">~</span> <span class="st">"women's attitude block"</span>,</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.default =</span> <span class="cn">NA</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>pool <span class="ot">&lt;-</span> reasons <span class="sc">|&gt;</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">is.na</span>(reason)) <span class="sc">|&gt;</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(item)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The tabs give the three rules side by side, the items of every scale after each rule, and the functions that apply the same rules for the pipeline script of Chapters 16 to 18.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Rules</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Scales</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Pool for the script</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">rule =</span> <span class="fu">c</span>(<span class="st">"ceiling"</span>, <span class="st">"negative wording"</span>, <span class="st">"women's attitude block"</span>),</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">criterion =</span> <span class="fu">c</span>(<span class="st">"T0 mean above 9.7"</span>, <span class="st">"negatively worded"</span>,</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"the rest of the block"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">leave  =</span> <span class="fu">map_int</span>(rule, \(r) <span class="fu">sum</span>(reasons<span class="sc">$</span>reason <span class="sc">%in%</span> r)),</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">remain =</span> <span class="fu">length</span>(item_names) <span class="sc">-</span> <span class="fu">cumsum</span>(leave),</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">before =</span> remain <span class="sc">+</span> leave,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">items  =</span> <span class="fu">map_chr</span>(rule, \(r)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>           <span class="fu">str_flatten_comma</span>(reasons<span class="sc">$</span>item[reasons<span class="sc">$</span>reason <span class="sc">%in%</span> r]))) <span class="sc">|&gt;</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(rule, criterion, before, leave, remain, items)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
 <col style="width: 4%">
-<col style="width: 95%">
+<col style="width: 4%">
+<col style="width: 1%">
+<col style="width: 1%">
+<col style="width: 1%">
+<col style="width: 87%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">reason</th>
+<th style="text-align: left;">rule</th>
+<th style="text-align: left;">criterion</th>
+<th style="text-align: right;">before</th>
+<th style="text-align: right;">leave</th>
+<th style="text-align: right;">remain</th>
 <th style="text-align: left;">items</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">negative wording</td>
-<td style="text-align: left;">Rogerian7, Rogerian8, Rogerian9, Flourishing5, Flourishing6, NoAlienation1, NoAlienation2, NoIsolation1, NoIsolation2, ToleranceDiversity1, AutonomyNonFrustrated1, RelatednessNonFrustrated1, CompetenceNonFrustrated1, AutonomyNonFrustrated2, RelatednessNonFrustrated2, CompetenceNonFrustrated2, AutonomyNonFrustrated3, RelatednessNonFrustrated3, CompetenceNonFrustrated3, AutonomyNonFrustrated4, RelatednessNonFrustrated4, CompetenceNonFrustrated4</td>
+<td style="text-align: left;">ceiling</td>
+<td style="text-align: left;">T0 mean above 9.7</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">womenAttitude6, womenAttitude7</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">women’s attitude block</td>
-<td style="text-align: left;">womenAttitude1, womenAttitude2, womenAttitude3, womenAttitude4, womenAttitude5, womenAttitude8, womenAttitude9</td>
+<td style="text-align: left;">negative wording</td>
+<td style="text-align: left;">negatively worded</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: left;">Rogerian7, Rogerian8, Rogerian9, Flourishing5, Flourishing6, NoAlienation1, NoAlienation2, NoIsolation1, NoIsolation2, ToleranceDiversity1, AutonomyNonFrustrated1, RelatednessNonFrustrated1, CompetenceNonFrustrated1, AutonomyNonFrustrated2, RelatednessNonFrustrated2, CompetenceNonFrustrated2, AutonomyNonFrustrated3, RelatednessNonFrustrated3, CompetenceNonFrustrated3, AutonomyNonFrustrated4, RelatednessNonFrustrated4, CompetenceNonFrustrated4</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">ceiling</td>
-<td style="text-align: left;">womenAttitude6, womenAttitude7</td>
+<td style="text-align: left;">women’s attitude block</td>
+<td style="text-align: left;">the rest of the block</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: left;">womenAttitude1, womenAttitude2, womenAttitude3, womenAttitude4, womenAttitude5, womenAttitude8, womenAttitude9</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>pool <span class="ot">&lt;-</span> <span class="fu">structure_pool</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p><strong>Which scales does the pool still cover?</strong> Items per scale before and after pruning:</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>scale_coverage <span class="ot">&lt;-</span> scales <span class="sc">|&gt;</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">items_before =</span> <span class="fu">lengths</span>(scale_items[scale]),</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">items_after  =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>                                \(items) <span class="fu">sum</span>(items <span class="sc">%in%</span> pool))) <span class="sc">|&gt;</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(label, block, items_before, items_after)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>scale_coverage</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>scale_coverage <span class="ot">&lt;-</span> scales <span class="sc">|&gt;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">items          =</span> <span class="fu">lengths</span>(scale_items[scale]),</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">after_ceiling  =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>                                  \(i) <span class="fu">sum</span>(i <span class="sc">%in%</span> ceil_pool)),</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">after_negative =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>                                  \(i) <span class="fu">sum</span>(i <span class="sc">%in%</span> neg_pool)),</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">in_pool        =</span> <span class="fu">map_int</span>(scale_items[scale],</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>                                  \(i) <span class="fu">sum</span>(i <span class="sc">%in%</span> pool))) <span class="sc">|&gt;</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(label, block, items, after_ceiling, after_negative, in_pool)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>scale_coverage</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="kable-table">
 <table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 18%">
+<col style="width: 19%">
+<col style="width: 10%">
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">label</th>
 <th style="text-align: left;">block</th>
-<th style="text-align: right;">items_before</th>
-<th style="text-align: right;">items_after</th>
+<th style="text-align: right;">items</th>
+<th style="text-align: right;">after_ceiling</th>
+<th style="text-align: right;">after_negative</th>
+<th style="text-align: right;">in_pool</th>
 </tr>
 </thead>
 <tbody>
@@ -879,10 +1733,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H1</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">I Listen</td>
 <td style="text-align: left;">H1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
 </tr>
@@ -891,10 +1749,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Kama Muta</td>
 <td style="text-align: left;">H1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
 </tr>
@@ -903,10 +1765,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H1</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Belongingness</td>
 <td style="text-align: left;">H1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">3</td>
 </tr>
@@ -914,23 +1780,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">No Alienation</td>
 <td style="text-align: left;">H1</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">No Isolation</td>
 <td style="text-align: left;">H1</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Rogerian Schema</td>
 <td style="text-align: left;">H2</td>
 <td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Paradox Mindset</td>
 <td style="text-align: left;">H2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">9</td>
 </tr>
@@ -939,28 +1813,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H2</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Tolerance Diversity</td>
 <td style="text-align: left;">H2</td>
 <td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Women Attitude</td>
 <td style="text-align: left;">H2</td>
 <td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Flourishing</td>
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Autonomy Satisfaction</td>
 <td style="text-align: left;">H3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
 </tr>
@@ -969,10 +1853,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Competence Satisfaction</td>
 <td style="text-align: left;">H3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">4</td>
 </tr>
@@ -980,23 +1868,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">Autonomy Non-Frustrated</td>
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Relatedness Non-Frustrated</td>
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Competence Non-Frustrated</td>
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Empowerment</td>
 <td style="text-align: left;">H3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">5</td>
 </tr>
@@ -1005,10 +1901,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">H3</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Intellectual Capital</td>
 <td style="text-align: left;">H3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">3</td>
 </tr>
@@ -1017,7 +1917,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>The ceiling, the negative wording and the women’s attitude block remove 31 items and leave 71. The pool loses 6 scales entirely: No Alienation, No Isolation, Women Attitude, Autonomy Non-Frustrated, Relatedness Non-Frustrated, and Competence Non-Frustrated. The remaining 17 scales enter the network analyses of Chapter 16 with all their positively worded items.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Item pruning (Chapter 15): which items leave the pool before the network</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="co"># analyses, and how strongly each item moves while the experimental group</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="co"># trains. Needs `item_names` (the 102 items, Chapter 2).</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># the 22 negatively worded items, reverse-keyed in Chapter 2</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>negative_items <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"NoAlienation1"</span>, <span class="st">"NoAlienation2"</span>,</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"NoIsolation1"</span>, <span class="st">"NoIsolation2"</span>,</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Flourishing5"</span>, <span class="st">"Flourishing6"</span>, <span class="fu">paste0</span>(<span class="st">"Rogerian"</span>, <span class="dv">7</span><span class="sc">:</span><span class="dv">9</span>),</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"ToleranceDiversity1"</span>,</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">str_subset</span>(item_names, <span class="st">"NonFrustrated"</span>))</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a><span class="co"># items with a T0 mean above the cutoff: hardly any room left to vary</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>items_at_ceiling <span class="ot">&lt;-</span> \(data, <span class="at">cutoff =</span> <span class="fl">9.7</span>) {</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">==</span> <span class="st">"T0"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">all_of</span>(item_names), \(x) <span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">everything</span>(), <span class="at">names_to =</span> <span class="st">"item"</span>, <span class="at">values_to =</span> <span class="st">"mean"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(mean <span class="sc">&gt;</span> cutoff) <span class="sc">|&gt;</span></span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(item)</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a><span class="co"># why an item leaves the pool (NA: it stays); the first reason that applies</span></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>pruning_reasons <span class="ot">&lt;-</span> \(data) {</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>  at_ceiling <span class="ot">&lt;-</span> <span class="fu">items_at_ceiling</span>(data)</span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">item =</span> item_names) <span class="sc">|&gt;</span></span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">reason =</span> <span class="fu">case_when</span>(</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>      item <span class="sc">%in%</span> at_ceiling              <span class="sc">~</span> <span class="st">"ceiling"</span>,</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>      item <span class="sc">%in%</span> negative_items          <span class="sc">~</span> <span class="st">"negative wording"</span>,</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">str_starts</span>(item, <span class="st">"womenAttitude"</span>) <span class="sc">~</span> <span class="st">"women's attitude block"</span>,</span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">.default =</span> <span class="cn">NA</span></span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a><span class="co"># the items that stay, in the order of the questionnaire</span></span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>structure_pool <span class="ot">&lt;-</span> \(data) {</span>
+<span id="cb29-36"><a href="#cb29-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pruning_reasons</span>(data) <span class="sc">|&gt;</span></span>
+<span id="cb29-37"><a href="#cb29-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(<span class="fu">is.na</span>(reason)) <span class="sc">|&gt;</span></span>
+<span id="cb29-38"><a href="#cb29-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(item)</span>
+<span id="cb29-39"><a href="#cb29-39" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb29-40"><a href="#cb29-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-41"><a href="#cb29-41" aria-hidden="true" tabindex="-1"></a><span class="co"># change from T0 to T1 in each group, over the SD of both groups at T0;</span></span>
+<span id="cb29-42"><a href="#cb29-42" aria-hidden="true" tabindex="-1"></a><span class="co"># d_did is the difference of the two. Cell means use every questionnaire</span></span>
+<span id="cb29-43"><a href="#cb29-43" aria-hidden="true" tabindex="-1"></a><span class="co"># of a group and wave, not only persons who answered at both waves.</span></span>
+<span id="cb29-44"><a href="#cb29-44" aria-hidden="true" tabindex="-1"></a>item_did <span class="ot">&lt;-</span> \(data) {</span>
+<span id="cb29-45"><a href="#cb29-45" aria-hidden="true" tabindex="-1"></a>  data <span class="sc">|&gt;</span></span>
+<span id="cb29-46"><a href="#cb29-46" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(Occasion <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"T0"</span>, <span class="st">"T1"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb29-47"><a href="#cb29-47" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">all_of</span>(item_names), <span class="at">names_to =</span> <span class="st">"item"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb29-48"><a href="#cb29-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise</span>(<span class="at">m =</span> <span class="fu">mean</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-49"><a href="#cb29-49" aria-hidden="true" tabindex="-1"></a>              <span class="at">v =</span> <span class="fu">var</span>(value, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb29-50"><a href="#cb29-50" aria-hidden="true" tabindex="-1"></a>              <span class="at">n =</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)),</span>
+<span id="cb29-51"><a href="#cb29-51" aria-hidden="true" tabindex="-1"></a>              <span class="at">.by =</span> <span class="fu">c</span>(item, condition, Occasion)) <span class="sc">|&gt;</span></span>
+<span id="cb29-52"><a href="#cb29-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="fu">c</span>(condition, Occasion),</span>
+<span id="cb29-53"><a href="#cb29-53" aria-hidden="true" tabindex="-1"></a>                <span class="at">values_from =</span> <span class="fu">c</span>(m, v, n)) <span class="sc">|&gt;</span></span>
+<span id="cb29-54"><a href="#cb29-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">sd_T0 =</span> <span class="fu">sqrt</span>(((n_Experimental_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Experimental_T0 <span class="sc">+</span></span>
+<span id="cb29-55"><a href="#cb29-55" aria-hidden="true" tabindex="-1"></a>                           (n_Control_T0 <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> v_Control_T0) <span class="sc">/</span></span>
+<span id="cb29-56"><a href="#cb29-56" aria-hidden="true" tabindex="-1"></a>                          (n_Experimental_T0 <span class="sc">+</span> n_Control_T0 <span class="sc">-</span> <span class="dv">2</span>)),</span>
+<span id="cb29-57"><a href="#cb29-57" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_E   =</span> (m_Experimental_T1 <span class="sc">-</span> m_Experimental_T0) <span class="sc">/</span> sd_T0,</span>
+<span id="cb29-58"><a href="#cb29-58" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_C   =</span> (m_Control_T1 <span class="sc">-</span> m_Control_T0) <span class="sc">/</span> sd_T0,</span>
+<span id="cb29-59"><a href="#cb29-59" aria-hidden="true" tabindex="-1"></a>           <span class="at">d_did =</span> d_E <span class="sc">-</span> d_C) <span class="sc">|&gt;</span></span>
+<span id="cb29-60"><a href="#cb29-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(item, sd_T0, d_E, d_C, d_did)</span>
+<span id="cb29-61"><a href="#cb29-61" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
+</div>
+</div>
+<p>The three rules remove 31 items and leave 71. The pool loses 6 scales entirely: No Alienation, No Isolation, Women Attitude, Autonomy Non-Frustrated, Relatedness Non-Frustrated, and Competence Non-Frustrated. The remaining 17 scales enter the network analyses of Chapter 16 with all their positively worded items.</p>
+<p>Chapter 16 asks which of the 71 items keep their place in a network of all items.</p>
 
 
 </section>

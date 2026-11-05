@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-30a307ac0d0c77ebb518148b362088db.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-9f0e0a1ec90ea562bd064d49dae10e89.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2c4fae3da3cc6cd46c677ca802383b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -170,6 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Each chapter names the tables and sections of the paper its results feed.</li>
 <li>Numbers that the paper reports are checked in the code: a hidden line stops the report if one of them changes.</li>
 </ul>
+<p><strong>How is each chapter built?</strong> The same way throughout. Section 1 of a chapter lists the steps that every unit of the chapter goes through (a construct, an outcome, a model, a processing step) and the criteria that decide each step, with a diagram of the path. Section 2 shows the data and the helper functions used for checks, figures and summary tables; the analyses themselves are written out where they happen. Then each unit follows under its own heading. It opens with its path through the steps: a table of each step’s question and result. The steps are grouped into parts, which the table of contents on the left shows; a label beside each step names the data it uses, and each step ends by naming the next. Every step runs the same way: a question, the code that answers it, its output and what it means. Before a model is read, it goes through the checks that the textbooks of its method name; in Chapters 7, 8 and 11 a model that fails them stops. The last section of each chapter sets all units side by side.</p>
 <p><strong>Can the analyses be re-run?</strong> The questionnaires carry self-generated participant codes, ages and sex, so the data are not published with this report. The code is complete: every step can be followed and applied to comparable data.</p>
 <p><strong>Who is SW0123?</strong> Every person appears under a pseudonym: the respondent ID of the data deposit (SW0001 to SW0461, and SW0462 for the second of two people who shared one code), or T01 to T64 for a code that was typed at one wave and corrected later. The codes themselves, built from the mother’s name and birthday, never appear in this report.</p>
 </section>
@@ -317,6 +318,14 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">1.2.2</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">parameters</td>
+<td style="text-align: left;">0.28.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">performance</td>
+<td style="text-align: left;">0.16.0</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">psych</td>
 <td style="text-align: left;">2.5.6</td>
 </tr>
@@ -353,16 +362,20 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">1.47</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">ggrepel</td>
+<td style="text-align: left;">0.9.6</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">semPlot</td>
 <td style="text-align: left;">1.1.7</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">semptools</td>
 <td style="text-align: left;">0.3.2</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">mariposa</td>
-<td style="text-align: left;">0.7.3</td>
+<td style="text-align: left;">0.7.4</td>
 </tr>
 </tbody>
 </table>
